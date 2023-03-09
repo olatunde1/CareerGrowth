@@ -2,6 +2,7 @@ import {
   Box,
   Flex,
   Text,
+  Image,
   IconButton,
   Button,
   Stack,
@@ -16,6 +17,10 @@ import {
   CloseIcon,
 } from '@chakra-ui/icons';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import logo from './images/logo.png'
+
+
+
 
 export default function WithSubnavigation() {
     const { colorMode, toggleColorMode } = useColorMode();
@@ -48,47 +53,61 @@ export default function WithSubnavigation() {
             aria-label={'Toggle Navigation'}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Text
-            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-            fontFamily={'heading'}
-            color={useColorModeValue('gray.800', 'white')}>
-            Logo
-          </Text>
-
-          <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
-            {/* <DesktopNav /> */}
-          </Flex>
+        <Flex flex={{ base: 'center',md:'1' }} justify={{ base: 'center', md: 'start' }}>
+        <Box>
+            <Image src={logo} />
+          </Box>
         </Flex>
 
         <Stack
           flex={{ base: 1, md: 0 }}
           justify={'flex-end'}
+          display={{ base: 'none', md: 'inline-flex' }}
           direction={'row'}
-          spacing={6}>
+          spacing={4}>
           <Button
+          paddingLeft={'32px'}
+          paddingRight={'32px'}
+            paddingBottom={'8px'}
+            paddingTop={'8px'}
+
             as={'a'}
             fontSize={'sm'}
             fontWeight={400}
-            variant={'link'}
-            href={'#'}>
-            Sign In
+            border={'1px solid gray'}
+            color={'#0077FE'}
+            bg={'#ffffff'}
+            href={'#'}
+            _hover={{
+                bg: '#0077FE',
+                color:'#ffffff',
+                border:'1px solid white'
+              }}>
+            Contact Us
           </Button>
           <Button
+          paddingLeft={'32px'}
+          paddingRight={'32px'}
+           paddingBottom={'8px'}
+           paddingTop={'8px'}
             as={'a'}
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'sm'}
-            fontWeight={600}
-            color={'white'}
-            bg={'pink.400'}
+            fontWeight={400}
+            border={'1px solid gray'}
+            color={'#0077FE'}
+            bg={'#ffffff'}
             href={'#'}
             _hover={{
-              bg: 'pink.300',
-            }}>
-            Sign Up
+                bg: '#0077FE',
+                color:'#ffffff',
+                border:'0'
+              }}
+            >
+            Join Now
           </Button>
         </Stack>
-        <Stack direction={'row'} spacing={7}>
+        <Stack direction={'row'} spacing={7} marginLeft={'24px'}>
               <Button onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
               </Button>
@@ -96,33 +115,44 @@ export default function WithSubnavigation() {
 
       </Flex>
 
+{/*############ This is the mobile section for the toggler #########################*/}
+
       <Collapse in={isOpen} animateOpacity>
         {/* <MobileNav /> */}
         <Stack
         //   flex={{ base: 1, md: 1 }}
           justify={'flex-start'}
           direction={'column'}
-          spacing={6}>
+          spacing={4}>
           <Button
             as={'a'}
             fontSize={'sm'}
-            fontWeight={400}
-            variant={'link'}
-            href={'#'}>
-            Sign In
+            fontWeight={600}
+            // border={'1px solid #0077FE'}
+            color={'#0077FE'}
+            bg={'#ffffff'}
+            // variant={'link'}
+            href={'#'}
+            _hover={{
+                bg: '#0077FE',
+                color:'#ffffff',
+              }}>
+            Contact Us
           </Button>
           <Button
             as={'a'}
             // display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'sm'}
             fontWeight={600}
-            color={'white'}
-            bg={'pink.400'}
+            // border={'1px solid #0077FE'}
+            color={'#0077FE'}
+            bg={'#ffffff'}
             href={'#'}
             _hover={{
-              bg: 'pink.300',
+              bg: '#0077FE',
+              color:'#ffffff',
             }}>
-            Sign Up
+            Join Now
           </Button>
         </Stack>
       </Collapse>

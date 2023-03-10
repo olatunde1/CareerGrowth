@@ -17,6 +17,7 @@ import {
   CloseIcon,
 } from '@chakra-ui/icons';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { ArrowForwardIcon } from '@chakra-ui/icons'
 import logo from './images/logo.png'
 
 
@@ -74,8 +75,8 @@ export default function WithSubnavigation() {
             as={'a'}
             fontSize={'sm'}
             fontWeight={400}
-            border={'1px solid gray'}
-            color={'#0077FE'}
+            border={'1px solid #E6E6E6'}
+            color={'#080808'}
             bg={'#ffffff'}
             href={'#'}
             _hover={{
@@ -87,15 +88,15 @@ export default function WithSubnavigation() {
           </Button>
           <Button
           paddingLeft={'32px'}
-          paddingRight={'32px'}
+        //   paddingRight={'32px'}
            paddingBottom={'8px'}
            paddingTop={'8px'}
             as={'a'}
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'sm'}
             fontWeight={400}
-            border={'1px solid gray'}
-            color={'#0077FE'}
+            border={'1px solid #E6E6E6'}
+            color={'#080808'}
             bg={'#ffffff'}
             href={'#'}
             _hover={{
@@ -104,7 +105,16 @@ export default function WithSubnavigation() {
                 border:'0'
               }}
             >
-            Join Now
+            Join Now <IconButton aria-label='Search database'
+                                icon={<ArrowForwardIcon />}
+                                marginLeft={'8px'}
+                                colorScheme='none' 
+                                color={'#ffffff'}
+                                _hover={{
+                                    // bg: '#0077FE',
+                                    color:'#ffffff',
+                                    border:'0'
+                                  }}/>
           </Button>
         </Stack>
         <Stack direction={'row'} spacing={7} marginLeft={'24px'}>
@@ -129,13 +139,15 @@ export default function WithSubnavigation() {
             fontSize={'sm'}
             fontWeight={600}
             // border={'1px solid #0077FE'}
-            color={'#0077FE'}
+            border={'1px solid #E6E6E6'}
+            color={'#080808'}
             bg={'#ffffff'}
             // variant={'link'}
             href={'#'}
             _hover={{
                 bg: '#0077FE',
                 color:'#ffffff',
+                border:'0'
               }}>
             Contact Us
           </Button>
@@ -145,14 +157,16 @@ export default function WithSubnavigation() {
             fontSize={'sm'}
             fontWeight={600}
             // border={'1px solid #0077FE'}
-            color={'#0077FE'}
+            border={'1px solid #E6E6E6'}
+            color={'#080808'}
             bg={'#ffffff'}
             href={'#'}
             _hover={{
               bg: '#0077FE',
               color:'#ffffff',
+              border:'0'
             }}>
-            Join Now
+            Join Now 
           </Button>
         </Stack>
       </Collapse>

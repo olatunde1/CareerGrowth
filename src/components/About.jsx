@@ -17,7 +17,7 @@ import {
   
   export default function SplitScreen() {
     return (
-      <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }} marginLeft={'160px'} marginRight={'160px'}>
+      <Stack minH={'100vh'} W={'full'} direction={{ base: 'column', md: 'row' }} paddingLeft={'160px'}>
          <Flex flex={1}>
           <Image
             alt={'Join Image'}

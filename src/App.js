@@ -9,18 +9,22 @@ import {
 import NavigationBar from './components/NavigationBar'
 import LandJob from './components/LandJob'
 import About from './components/About'
-import JoinOurCommunity from './components/JoinOurCommunity';
+import Member from './components/Member'
+import JoinOurCommunity from './components/JoinOurCommunity'
+import Faq from './components/Faq';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" >
+      <Box>
+        <Grid>
           {/* <ColorModeSwitcher justifySelf="flex-end" /> */}
               <NavigationBar />
               <LandJob />
               <About />
+              <Member />
               <JoinOurCommunity />
+              <Faq />
         </Grid>
       </Box>
     </ChakraProvider>

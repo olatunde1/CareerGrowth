@@ -16,6 +16,8 @@ import {
   HamburgerIcon,
   CloseIcon,
 } from '@chakra-ui/icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import logo from './images/logo.png'
@@ -88,7 +90,6 @@ export default function WithSubnavigation() {
           </Button>
           <Button
           paddingLeft={'32px'}
-        //   paddingRight={'32px'}
            paddingBottom={'8px'}
            paddingTop={'8px'}
             as={'a'}
@@ -105,16 +106,7 @@ export default function WithSubnavigation() {
                 border:'0'
               }}
             >
-            Join Now <IconButton aria-label='Search database'
-                                icon={<ArrowForwardIcon />}
-                                marginLeft={'8px'}
-                                colorScheme='none' 
-                                color={'#ffffff'}
-                                _hover={{
-                                    // bg: '#0077FE',
-                                    color:'#ffffff',
-                                    border:'0'
-                                  }}/>
+            Join Now &nbsp;&nbsp;&nbsp;&nbsp; <FontAwesomeIcon icon={faArrowRight}/>
           </Button>
         </Stack>
         <Stack direction={'row'} spacing={7} marginLeft={'24px'}>

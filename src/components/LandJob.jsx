@@ -4,7 +4,12 @@ import {
     Stack,
     Text,
     Button,
+    Image
   } from '@chakra-ui/react';
+  import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+  import {faArrowUpRightDots} from '@fortawesome/free-solid-svg-icons'
+  
+  import arrow from './images/arrow-up.png'
   
   export default function CallToActionWithIllustration() {
     return (
@@ -18,10 +23,11 @@ import {
           >
         
           <Heading
-            width={{md:'700px'}}
+            // width={{md:'700px'}}
             fontWeight={700}
-            fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
-            lineHeight={'110%'}>
+            fontFamily='Epilogue'
+            fontSize={{ base: '3xl', sm: '4xl', md: '5.25rem' }}
+            lineHeight={'86px'}>
            Land your dream job in Tech &{' '}
             <Text as={'span'} color={'#0077FE'}>
             10x your income.
@@ -51,12 +57,12 @@ import {
               Join Now
             </Button>
             <Button 
-               px={'88px'}
+              //  px={'88px'}
                 color={'#0077FE'}
                 colorScheme={'#0077FE'}
                 bg={'#EEF6FF'}
                  _hover={{ bg: '#0077FE', color: '#ffff' }}>
-              Learn more
+              Contact Us &nbsp;&nbsp;&nbsp;&nbsp; <FontAwesomeIcon className='icon' icon={faArrowUpRightDots} />
             </Button>
           </Stack>
         </Stack>

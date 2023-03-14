@@ -6,17 +6,20 @@ const JoinOurCommunity = () => {
     <Card
         backgroundColor={'#001630'}
         color={'#ffffff'}
-        direction={{ base: 'column', sm: 'row' }}
+        direction={{ base: 'n', sm: 'row', md:'row' }}
         overflow='hidden'
         variant='outline'
     >
 
   <Stack>
     <CardBody>
-
+    <Heading fontSize={{ base: '3xl', md: '48px', lg: '48px' }}
+            width={{md:'478px'}}
+            height={{md:'120px'}}
+            lineHeight={'60px'}>
       <Text
         textAlign={'justify'}
-        width={'740px'}
+        width={'940px'}
         paddingLeft={'160px'}
         // fontFamily={'Satoshi'}
         fontStyle={'normal'}
@@ -26,13 +29,16 @@ const JoinOurCommunity = () => {
         // letterSpacing={'-0.98px'}
        
       py='2'>
-        Join our community today <br /> to fast-track your tech <br /> career
+        Join our community today <br /> to<Text color={'#0077FE'} as={'span'}>
+              {' '} fast-track</Text>{' '}your<Text color={'#0077FE'} as={'span'}  > tech <br /> career
       </Text>
+      </Text>
+      </Heading>
     </CardBody>
 
     <CardFooter>
       <Button variant='solid' colorScheme='blue'>
-        Buy Latte
+        Join Now
       </Button>
     </CardFooter>
   </Stack>

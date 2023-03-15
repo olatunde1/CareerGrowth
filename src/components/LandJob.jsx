@@ -17,11 +17,11 @@ import {
           textAlign={'center'}
           align={'center'}
           spacing={{ base: 8, md: 10 }}
-          py={{ base: 20, md: 28 }}
+          py={{ base: 20, md: 32 }}
           >
         
           <Heading
-            // width={{md:'700px'}}
+            width={{md:'1074px'}}
             fontWeight={700}
             fontFamily='Epilogue'
             fontSize={{ base: '3xl', sm: '4xl', md: '5.25rem' }}

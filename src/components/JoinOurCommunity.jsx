@@ -10,15 +10,18 @@ const JoinOurCommunity = () => {
       direction={{ base: 'column', sm: 'row', md:'row' }}
       overflow='hidden'
       variant='outline'
+      // margin={'0 auto'}
 
     >
-      <Box>
-          <Heading fontSize={{ base: '3xl', md: '48px', lg: '48px' }}
-                    width={{md:'478px'}}
-                    height={{md:'120px'}}
-                    lineHeight={'60px'}>
+      <Box
+        fontSize={{ base: '3xl', md: '48px', lg: '48px' }}
+        // width={{md:'478px'}}
+        height={{md:'120px'}}
+        lineHeight={'60px'}
+      >
+         
               <Text
-                textAlign={'justify'}
+                // textAlign={'justify'}
                 width={'940px'}
                 paddingLeft={'160px'}
                 // fontFamily={'Satoshi'}
@@ -33,7 +36,7 @@ const JoinOurCommunity = () => {
                       {' '} fast-track</Text>{' '}your<Text color={'#0077FE'} as={'span'}  > tech <br /> career
               </Text>
               </Text>
-            </Heading>
+
             <Button variant='solid' colorScheme='blue'>
                 Join Now
               </Button>
@@ -41,7 +44,8 @@ const JoinOurCommunity = () => {
 
       </Box>
       <Box 
-        marginLeft={'500.14px'}
+        // marginLeft={'90.14px'}
+        marginRight={'115.19px'}
       >
         <Image
             objectFit='cover'

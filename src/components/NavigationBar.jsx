@@ -23,7 +23,7 @@ import logo from './images/logo.png'
 
 
 export default function WithSubnavigation() {
-    const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode, toggleColorMode } = useColorMode();
 
 
   const { isOpen, onToggle } = useDisclosure();
@@ -33,12 +33,9 @@ export default function WithSubnavigation() {
       <Flex
         bg={useColorModeValue('white', 'gray.800')}
         color={useColorModeValue('gray.600', 'white')}
-        minH={'60px'}
-        py={{ base: 2 }}
+        py={{ base: 2, md: 8 }}
         px={{ base: 4 }}
-        borderBottom={1}
-        borderStyle={'solid'}
-        borderColor={useColorModeValue('gray.200', 'gray.900')}
+        marginRight={'158px'}
         align={'center'}>
         <Flex
           flex={{ base: 1, md: 'auto' }}
@@ -54,7 +51,7 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 'center',md:'1' }} justify={{ base: 'center', md: 'start' }}>
-        <Box>
+        <Box marginLeft={'80px'}>
             <Image src={logo} />
           </Box>
         </Flex>

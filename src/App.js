@@ -12,6 +12,7 @@ import About from './components/About'
 import Member from './components/Member'
 import JoinOurCommunity from './components/JoinOurCommunity'
 import Faq from './components/Faq';
+import './style.css'
 
 function App() {
   return (

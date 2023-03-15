@@ -1,19 +1,49 @@
-import { Container,HStack,Box,Text, Accordion,
+import { HStack,Box,Text, Accordion,
     AccordionItem,
     AccordionButton,
     AccordionPanel,
-    AccordionIcon, } from '@chakra-ui/react'
+    AccordionIcon,
+    Heading, } from '@chakra-ui/react'
 import React from 'react'
 
 const Faq = () => {
   return (
    
-        <HStack width={'1238px'} margin={'0 auto'}>
-            <Box paddingTop={'120px'}>
-                <Text>Faq’s</Text>
-                <Text>Frequently Asked <br /> Questions</Text>
-                <Text>Couldn’t find what you were looking for? write to us at</Text>
-                <Text>hi@careergrowth.com</Text>
+        <Box margin={'0 auto'} display={'flex'} marginBottom={'116px'}>
+            <Box >
+                <Text 
+                     paddingTop={'120px'}
+                     paddingBottom={'16px'}
+                     color={'#01E7FF'}
+                     fontWeight={'500'}
+                >Faq’s</Text>
+             <Heading
+             fontSize={'48px'}
+             fontWeight={'600'}
+             marginRight={'64px'}
+             lineHeight={'60px'}
+             paddingBottom={'200px'}>
+             <Text
+                   
+                     
+                >Frequently Asked </Text>{' '}{' '}
+                <Text color={'#0077FE'} as={'span'}>
+               Questions
+                </Text>{' '}
+             </Heading>
+                <Text
+                    fontSize={'14px'}
+                    width={'342px'}
+                    marginBottom={'16px'}
+                    lineHeight={'24px'}
+                >Couldn’t find what you were looking for? <br /> write to us at</Text>
+                <Text
+                     fontSize={'16px'}
+                     color={'#0077FE'}
+                     lineHeight={'28px'}
+                     fontWeight={'400'}
+                     textDecoration={'underline'}
+                > <a href="hi@careergrowth.com">hi@careergrowth.com</a></Text>
             </Box>
             <Box
                 width={'640px'}
@@ -115,7 +145,7 @@ const Faq = () => {
             </Accordion>
             
             </Box>
-        </HStack>
+        </Box> 
   
   )
 }

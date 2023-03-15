@@ -4,6 +4,7 @@ import join from './images/Image.png'
 const JoinOurCommunity = () => {
   return (
     <Box 
+      height={'509px'}
       display={'flex'}
       backgroundColor={'#001630'}
       color={'#ffffff'}
@@ -14,32 +15,41 @@ const JoinOurCommunity = () => {
 
     >
       <Box
-        fontSize={{ base: '3xl', md: '48px', lg: '48px' }}
-        // width={{md:'478px'}}
-        height={{md:'120px'}}
-        lineHeight={'60px'}
+        // fontSize={{ base: '3xl', md: '48px', lg: '48px' }}
+        // // width={{md:'478px'}}
+        // // height={{md:'120px'}}
+        // lineHeight={'60px'}
       >
          
+            
+              <Box>
               <Text
-                // textAlign={'justify'}
                 width={'940px'}
                 paddingLeft={'160px'}
-                // fontFamily={'Satoshi'}
+                fontFamily='Epilogue'
                 fontStyle={'normal'}
                 fontWeight={'600'}
                 fontSize={'44px'}
                 lineHeight={'60px'}
-                // letterSpacing={'-0.98px'}
-              
-              py='2'>
+                letterSpacing={'-0.98px'}
+                paddingTop='131.5px'>
                 Join our community today <br /> to<Text color={'#0077FE'} as={'span'}>
                       {' '} fast-track</Text>{' '}your<Text color={'#0077FE'} as={'span'}  > tech <br /> career
               </Text>
               </Text>
-
-            <Button variant='solid' colorScheme='blue'>
+              <Button
+                 marginTop={'18px'}
+                fontFamily='Epilogue'
+                variant='solid'
+                colorScheme='blue'
+                marginLeft={'160px'}
+                color={'#ffffff'}
+                px={'92px'}
+                backgroundColor={'#01E7FF'}
+                _hover={{ bg: '#01E7FF', color: '#ffff' }}>
                 Join Now
               </Button>
+              </Box>
 
 
       </Box>

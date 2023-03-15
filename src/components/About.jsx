@@ -31,13 +31,18 @@ import {
           <Stack spacing={6} w={'full'} maxW={'lg'}>
             <Text color={'#01E7FF'}
             fontSize={'14px'}
-            fontWeight={'500'}>
+            fontWeight={'500'}
+            fontFamily='Epilogue'>
                 ABOUT</Text>
             <Heading fontSize={{ base: '3xl', md: '48px', lg: '48px' }}
             width={{md:'478px'}}
             height={{md:'120px'}}
             lineHeight={'60px'}>
               <Text
+                fontFamily='Epilogue'
+                fontWeight={'600'}
+                lineHeight={'60px'}
+                fontStyle={'normal'}
                 as={'span'}
                 position={'relative'}
                 _after={{

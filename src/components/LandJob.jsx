@@ -47,7 +47,10 @@ import {
           </Text>
           <Stack spacing={6} direction={'row'}>
             <Button
+                fontFamily='Epilogue'
                 px={'88px'}
+                fontSize={'16px'}
+                fontWeight={'600'}
                 color={'#0077FE'}
                 colorScheme={'#0077FE'}
                 bg={'#EEF6FF'}
@@ -56,6 +59,9 @@ import {
             </Button>
             <Button 
               //  px={'88px'}
+                fontFamily='Epilogue'
+                fontSize={'16px'}
+                fontWeight={'600'}
                 color={'#0077FE'}
                 colorScheme={'#0077FE'}
                 bg={'#EEF6FF'}

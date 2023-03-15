@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+// import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import logo from './images/logo.png'
 
 
@@ -103,11 +103,11 @@ export default function WithSubnavigation() {
             Join Now &nbsp;&nbsp;&nbsp;&nbsp; <FontAwesomeIcon icon={faArrowRight}/>
           </Button>
         </Stack>
-        <Stack direction={'row'} spacing={7} marginLeft={'24px'}>
+        {/* <Stack direction={'row'} spacing={7} marginLeft={'24px'}>
               <Button onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
               </Button>
-            </Stack>
+            </Stack> */}
 
       </Flex>
 

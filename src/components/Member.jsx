@@ -23,7 +23,7 @@ import {
           textAlign={'center'}
           align={'center'}
           spacing={{ base: 8, md: 1 }}
-          py={{ base: 20, md: 28 }}
+          py={{ base: 20, md: 24 }}
           >
         
           <Heading
@@ -51,7 +51,9 @@ import {
           </Text>
           <Stack spacing={6} direction={'row'}>
             <Button
+                fontFamily='Epilogue'
                 px={'88px'}
+                fontSize={'16px'}
                 color={'#ffffff'}
                 colorScheme={'#0077FE'}
                 bg={'#0077FE'}
@@ -63,9 +65,10 @@ import {
         <SimpleGrid templateColumns='repeat(auto-fill, minmax(200px, 1fr))' marginLeft={'200px'} marginRight={'164.5px'}>
         
         <Card backgroundColor={'transparent'} border='none' variant={'unstyled'} >
-          <CardHeader> <Image src={Group1} /></CardHeader>
+          <CardHeader> <Image src={Group1} Width={'130px'} height={'100%'}/></CardHeader>
          
           <Text
+            fontFamily='Epilogue'
             fontWeight={'600'}
             paddingTop={'36px'}
             paddingBottom={'30px'}
@@ -74,18 +77,21 @@ import {
             lineHeight={'31px'}
           >Sign Up</Text>
           <Text
+            fontFamily={'Satoshi'}
             textAlign={'start'}
             fontSize={'20px'}
             fontWeight={'400'}
             width={'240px'}
+            lineHeight={'150%'}
           >Sign up for the Career Growth subscription program.</Text>
 
         </Card>     
         <Image src={GroupVector} marginTop={'62px'}/>
         <Card backgroundColor={'transparent'} border='none' variant={'unstyled'} >
-        <CardHeader>  <Image src={Group2} /> </CardHeader>
+        <CardHeader>  <Image src={Group2} Width={'130px'} height={'100%'} /> </CardHeader>
            
             <Text
+              fontFamily='Epilogue'
               fontWeight={'600'}
               paddingTop={'42px'}
               paddingBottom={'30px'}
@@ -94,10 +100,12 @@ import {
               lineHeight={'31px'}
             >Gain Access</Text>
             <Text
+              fontFamily={'Satoshi'}
               textAlign={'start'}
               fontSize={'20px'}
               fontWeight={'400'}
               width={'240px'}
+              lineHeight={'150%'}
             >Gain access to practical skills training, career guidance, mentorship, and a supportive community of like-minded individuals.</Text>
           
    
@@ -105,9 +113,10 @@ import {
         </Card>
         <Image src={GroupVector2} marginTop={'62px'}/>
         <Card backgroundColor={'transparent'} border='none' variant={'unstyled'} >
-        <CardHeader> <Image src={Group3}/></CardHeader>
+        <CardHeader> <Image src={Group3}  Width={'130px'} height={'100%'} /></CardHeader>
             
             <Text
+              fontFamily='Epilogue'
               fontWeight={'600'}
               paddingTop={'47px'}
               paddingBottom={'30px'}
@@ -116,9 +125,11 @@ import {
               lineHeight={'31px'}       
             >Fast-track</Text>
             <Text
+              fontFamily={'Satoshi'}
               textAlign={'start'}
               fontSize={'20px'}
               fontWeight={'400'}
+              lineHeight={'150%'}
             >Fast-track your career in tech and land your dream job.</Text>
         </Card>
         </SimpleGrid>

@@ -1,14 +1,12 @@
 import {
   Box,
   Flex,
-  Text,
   Image,
   IconButton,
   Button,
   Stack,
   Collapse,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
   useColorMode
 } from '@chakra-ui/react';
@@ -19,7 +17,6 @@ import {
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
-import { ArrowForwardIcon } from '@chakra-ui/icons'
 import logo from './images/logo.png'
 
 

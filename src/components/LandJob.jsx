@@ -9,8 +9,6 @@ import {
   import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
   import {faArrowUpRightDots} from '@fortawesome/free-solid-svg-icons'
   
-  import arrow from './images/arrow-up.png'
-  
   export default function CallToActionWithIllustration() {
     return (
       <Container maxW={'5xl'} marginBottom={'100.5px'}>

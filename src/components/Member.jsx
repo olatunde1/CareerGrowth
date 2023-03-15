@@ -5,7 +5,7 @@ import {
     Text,
     Image,
     Button,
-    Card, CardHeader, CardBody, CardFooter, SimpleGrid
+    Card, CardHeader, SimpleGrid
   } from '@chakra-ui/react';
   
   import Group1 from './images/Group1.png'

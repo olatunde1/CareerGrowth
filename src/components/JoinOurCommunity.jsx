@@ -15,10 +15,8 @@ const JoinOurCommunity = () => {
 
     >
       <Box
-        // fontSize={{ base: '3xl', md: '48px', lg: '48px' }}
-        // // width={{md:'478px'}}
-        // // height={{md:'120px'}}
-        // lineHeight={'60px'}
+        fontSize={{ base: '3xl', md: '48px', lg: '48px' }}
+        lineHeight={'60px'}
       >
          
             

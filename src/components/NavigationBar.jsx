@@ -61,7 +61,7 @@ export default function WithSubnavigation() {
           justify={'flex-end'}
           display={{ base: 'none', md: 'inline-flex' }}
           direction={'row'}
-          spacing={4}>
+          spacing={8}>
           <Button
           paddingLeft={'32px'}
           paddingRight={'32px'}
@@ -78,7 +78,7 @@ export default function WithSubnavigation() {
             _hover={{
                 bg: '#0077FE',
                 color:'#ffffff',
-                border:'1px solid white'
+                border:'2px solid white'
               }}>
             Contact Us
           </Button>

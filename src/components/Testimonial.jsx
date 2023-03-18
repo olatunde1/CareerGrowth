@@ -1,70 +1,98 @@
-import React, { useState, useEffect } from "react";
-import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-import { FaQuoteRight } from "react-icons/fa";
-import Data from './Data'
-import './Testimony.css'
+import React, { useState } from "react";
+import { Box,Image } from "@chakra-ui/react";
+import image1 from './images/testimonial.png'
 
-function App() {
-  const [people, setPeople] = useState(Data);
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const lastIndex = people.length - 1;
-    if (index < 0) {
-      setIndex(lastIndex);
-    }
-    if (index > lastIndex) {
-      setIndex(0);
-    }
-  }, [index, people]);
-
-  // autoslide, clearInterval = een cleanup functie noodzakelijk bij interval
-  useEffect(() => {
-    let slider = setInterval(() => {
-      setIndex(index + 1);
-    }, 3000);
-    return () => clearInterval(slider);
-  }, [index]);
+function Testimonials() {
+  const testimonialsArray = [
+    {
+      id: 1,
+      name: "Abiola Babatunde",
+      title: "Good COmpany",
+      description:
+        "“I can't thank the Career Growth enough for the incredible impact it's had on my career. With the help of their mentorship program and weekly sessions, I gained the skills and confidence I needed to succeed in interviews and land my dream job. Not only that, but the program also helped me negotiate a higher salary than I ever thought possible. I highly recommend the Career Growth community to anyone looking to take their tech career to the next level!.”",
+      image: "image1",
+    },
+    {
+      id: 2,
+      name: "Afoo seun",
+      title: "Good CO",
+      description:
+        "lorem Ipsum is Lorem Ipsum lorem Ipsum is Lorem Ipsum lorem Ipsum is Lorem Ipsum ",
+      image: "http://placehold.it/",
+    },
+    {
+      id: 3,
+      name: "Kuti Ola",
+      title: "foood COmpany",
+      description:
+        "lorem Ipsum is Lorem Ipsum lorem Ipsum is Lorem Ipsum lorem Ipsum is Lorem Ipsum ",
+      image: "http://placehold.it/",
+    },
+    {
+      id: 4,
+      name: "Abiola Babatunde",
+      title: "Good COmpany",
+      description:
+        "lorem Ipsum is Lorem Ipsum lorem Ipsum is Lorem Ipsum lorem Ipsum is Lorem Ipsum ",
+      image: "http://placehold.it/",
+    },
+  ];
+  const [testimonialBody, setTestimonialBody] = useState(testimonialsArray[0]);
 
   return (
-    <section id="testimonial" className="section">
-      <div className="title">
-        <h2>
-          Testimonial 
-        </h2>
+    <div>
+      {
+        //active testimonial
+      }
+      
+        <Box
+          width={{base:'374px', md:'1120px'}}
+          display={{base: 'column',md:'flex'}}
+        
+        >
+          <Box>
+            {/* <Box>{testimonialBody.name}</Box>
+            <Box>{testimonialBody.title}</Box> */}
+            <Box
+              width={{base:'341.6px', md:'580.29px'}}
+              height={{base:'220px', md:'248px'}}
+              fontSize={{base:'16px', md:'22px'}}
+              fontFamily={'Satoshi'}
+              fontStyle={'normal'}
+              lineHeight={{base:'22px', md:'140%'}}
+              color={'#001F42'}
+
+            >{testimonialBody.description}</Box>
+          </Box>
+          <Box>
+            <Image src={testimonialBody.image} height={'50px'} />
+          </Box>
+        </Box>
+        
+  
+
+      {
+        //testimonial list
+      }
+
+      <div className="flex">
+        {testimonialsArray.map((item, idx) => (
+          <div
+          className="smallCard"
+            key={idx}
+            onClick={() => {
+              // console.log(item)
+              setTestimonialBody(item);
+            }}
+          >
+            <div>image</div>
+            <div>Name and title</div>
+          </div>
+        ))}
       </div>
-      <div className="section-center">
-        {people.map((person, personIndex) => {
-          const { id, image, name, title, quote } = person;
-          let position = "nextSlide";
-          if (personIndex === index) {
-            position = "activeSlide";
-          }
-          if (
-            personIndex === index - 1 ||
-            (index === 0 && personIndex === people.length - 1)
-          ) {
-            position = "lastSlide";
-          }
-          return (
-            <article key={id} className={position}>
-              {/* <img src={image} alt={name} className="person-img" /> */}
-              <h4>{name}</h4>
-              <p className="title">{title}</p>
-              <p className="text">{quote}</p>
-              {/* <FaQuoteRight className="icon" /> */}
-            </article>
-          );
-        })}
-        <button className="prev" onClick={() => setIndex(index - 1)}>
-          <FiChevronLeft />
-        </button>
-        <button className="next" onClick={() => setIndex(index + 1)}>
-          <FiChevronRight />
-        </button>
-      </div>
-    </section>
+    </div>
+    
   );
 }
 
-export default App;
+export default Testimonials;

@@ -3,13 +3,15 @@ import { Box,Text, Accordion,
     AccordionButton,
     AccordionPanel,
     AccordionIcon,
-    Heading, } from '@chakra-ui/react'
+    Heading,
+    Container, } from '@chakra-ui/react'
 import React from 'react'
 
 const Faq = () => {
   return (
    
-        <Box margin={'0 auto'} display={'flex'} marginBottom={'116px'}>
+        <Container maxW={'container'}>
+            <Box display={'flex'} flexDirection={{ base: 'column', md:'row' }}>
             <Box marginRight={'42px'} >
                 <Text 
                      paddingTop={'120px'}
@@ -24,14 +26,17 @@ const Faq = () => {
              marginRight={'64px'}
              lineHeight={'60px'}
              fontFamily='Epilogue'
-             paddingBottom={'190px'}>
+             paddingBottom={{ base: '', md:'190px' }}
+             
+             >
              <Text color={'#001F42'}                    
                 >Frequently Asked </Text>{' '}{' '}
                 <Text color={'#0077FE'} as={'span'}>
                Questions
                 </Text>{' '}
              </Heading>
-                <Text
+               <Box  display={{ base: 'none', md:'block' }}>
+               <Text
                     fontSize={'14px'}
                     width={'342px'}
                     marginBottom={'8px'}
@@ -46,9 +51,11 @@ const Faq = () => {
                      textDecoration={'underline'}
                      fontFamily='Inter'
                 > <a href="hi@careergrowth.com">hi@careergrowth.com</a></Text>
+               </Box>
             </Box>
             <Box
-                width={'640px'}
+               
+                width={{base:'1100px', md:'640px'}}
                 paddingTop={'130px'}
             >
             <Accordion allowToggle>
@@ -193,7 +200,26 @@ const Faq = () => {
             </Accordion>
             
             </Box>
+            <Box marginTop={'44px'} textAlign={'center'} display={{ base: 'block', md:'none' }}   backgroundColor={'#001F42'} color={'#ffffff'}>
+                 <Text
+                 
+                    fontSize={'14px'}
+                    width={'342px'}
+                    marginBottom={'8px'}
+                    lineHeight={'24px'}
+                    fontFamily='Inter'
+                >Couldn’t find what you were looking for? <br /> write to us at</Text>
+                <Text
+                     fontSize={'16px'}
+                     color={'#0077FE'}
+                     lineHeight={'28px'}
+                     fontWeight={'400'}
+                     textDecoration={'underline'}
+                     fontFamily='Inter'
+                > <a href="hi@careergrowth.com">hi@careergrowth.com</a></Text>
+            </Box>
         </Box> 
+        </Container>
   
   )
 }

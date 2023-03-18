@@ -10,6 +10,7 @@ import NavigationBar from './components/NavigationBar'
 import LandJob from './components/LandJob'
 import About from './components/About'
 import Member from './components/Member'
+import Testimonial from './components/Testimonial.jsx'
 import JoinOurCommunity from './components/JoinOurCommunity'
 import Faq from './components/Faq';
 import './style.css'
@@ -24,6 +25,7 @@ function App() {
               <LandJob />
               <About />
               <Member />
+              <Testimonial />
               <JoinOurCommunity />
               <Faq />
         </Grid>

@@ -6,10 +6,14 @@ import {
   Button,
   Stack,
   Collapse,
+  Container,
   useColorModeValue,
   useDisclosure,
-  useColorMode
+  useColorMode,
+  extendTheme,
 } from '@chakra-ui/react';
+// import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
+  
 import {
   HamburgerIcon,
   CloseIcon,
@@ -23,21 +27,24 @@ import logo from './images/logo.png'
 
 
 export default function WithSubnavigation() {
+  
   const { colorMode, toggleColorMode } = useColorMode();
-
 
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box>
+    <Container maxW={'container'}>
+      <Box>
       <Flex
         bg={useColorModeValue('white', 'gray.800')}
         color={useColorModeValue('gray.600', 'white')}
         py={{ base: 2, md: 8 }}
         px={{ base: 4 }}
         marginRight={'158px'}
-        align={'center'}>
-        <Flex
+      >
+
+        {/* Toggler and Hamburger */}
+        {/* <Flex
           flex={{ base: 1, md: 'auto' }}
           ml={{ base: -2 }}
           display={{ base: 'flex', md: 'none' }}>
@@ -49,60 +56,41 @@ export default function WithSubnavigation() {
             variant={'ghost'}
             aria-label={'Toggle Navigation'}
           />
-        </Flex>
+        </Flex> */}
+        
         <Flex flex={{ base: 'center',md:'1' }} justify={{ base: 'center', md: 'start' }}>
         <Box marginLeft={'80px'}>
             <Image src={logo} />
           </Box>
         </Flex>
 
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={'flex-end'}
-          display={{ base: 'none', md: 'inline-flex' }}
-          direction={'row'}
-          spacing={8}>
-          <Button
-          paddingLeft={'32px'}
-          paddingRight={'32px'}
-            paddingBottom={'8px'}
-            paddingTop={'8px'}
-
-            as={'a'}
-            fontSize={'sm'}
-            fontWeight={400}
-            border={'1px solid #E6E6E6'}
-            color={'#080808'}
-            bg={'#ffffff'}
-            href={'#'}
-            _hover={{
-                bg: '#0077FE',
-                color:'#ffffff',
-                border:'2px solid white'
-              }}>
-            Contact Us
-          </Button>
-          <Button
-          paddingLeft={'32px'}
-           paddingBottom={'8px'}
-           paddingTop={'8px'}
-            as={'a'}
-            display={{ base: 'none', md: 'inline-flex' }}
-            fontSize={'sm'}
-            fontWeight={400}
-            border={'1px solid #E6E6E6'}
-            color={'#080808'}
-            bg={'#ffffff'}
-            href={'#'}
-            _hover={{
-                bg: '#0077FE',
-                color:'#ffffff',
-                border:'0'
-              }}
-            >
-            Join Now &nbsp;&nbsp;&nbsp;&nbsp; <FontAwesomeIcon icon={faArrowRight}/>
-          </Button>
-        </Stack>
+        <Stack spacing={6}
+        direction={'row'}
+        >
+            <Button
+                fontFamily='Inter'
+                display={{base:'none', md:'flex'}}
+                px={ '32px'}
+                fontSize={'14px'}
+                fontWeight={'600'}
+                border={'1px solid #E6E6E6 '}
+                bg={'#ffffff'}
+                _hover={{ bg: '#0077FE', color: '#ffff' }}>
+              Contact Us
+            </Button>
+            <Button 
+              //  px={'88px'}
+                display={{base:'none', md:'flex'}}
+                fontFamily='Inter'
+                fontSize={'14px'}
+                fontWeight={'600'}
+                border={'1px solid #E6E6E6 '}
+                // color={'#0077FE'}
+                bg={'#ffffff'}
+                 _hover={{ bg: '#0077FE', color: '#ffff' }}>
+              Join Now &nbsp;&nbsp;&nbsp;&nbsp; <FontAwesomeIcon className='icon' icon={faArrowRight} />
+            </Button>
+          </Stack>
         {/* <Stack direction={'row'} spacing={7} marginLeft={'24px'}>
               <Button onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
@@ -113,14 +101,15 @@ export default function WithSubnavigation() {
 
 {/*############ This is the mobile section for the toggler #########################*/}
 
-      <Collapse in={isOpen} animateOpacity>
-        {/* <MobileNav /> */}
+      {/* <Collapse in={isOpen} animateOpacity>
+        <MobileNav />
         <Stack
-        //   flex={{ base: 1, md: 1 }}
+          flex={{ base: 1, md: 1 }}
           justify={'flex-start'}
           direction={'column'}
-          spacing={4}>
+          spacing={1}>
           <Button
+          px={{base:'1px', md:'32px'}}
             as={'a'}
             fontSize={'sm'}
             fontWeight={600}
@@ -155,8 +144,10 @@ export default function WithSubnavigation() {
             Join Now 
           </Button>
         </Stack>
-      </Collapse>
+      </Collapse> */}
     </Box>
+    </Container>
+    
   );
 }
 

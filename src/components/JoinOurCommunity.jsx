@@ -1,38 +1,38 @@
 import React from "react"
-import { Box, Image,Text,Heading,Button } from '@chakra-ui/react'
+import { Box, Image,Text,Button,Container } from '@chakra-ui/react'
 import join from './images/Image.png'
 const JoinOurCommunity = () => {
   return (
-    <Box 
-      height={'509px'}
+    <Container maxW={'container'}>
+        <Box 
+      width={{base:'', md:'full'}}
+      height={{base:'', md:'509px'}}
       display={'flex'}
       backgroundColor={'#001630'}
       color={'#ffffff'}
-      direction={{ base: 'column', sm: 'row', md:'row' }}
+      flexDirection={{ base: 'column', md:'row' }}
       overflow='hidden'
       variant='outline'
-      // margin={'0 auto'}
+      padding={'0 auto'}
 
     >
       <Box
         fontSize={{ base: '3xl', md: '48px', lg: '48px' }}
         lineHeight={'60px'}
       >
-         
-            
-              <Box>
+        <Box>
               <Text
-                width={'940px'}
+                width={{ base: '514.08px', md: '740px'}}
                 paddingLeft={'160px'}
                 fontFamily='Epilogue'
                 fontStyle={'normal'}
                 fontWeight={'600'}
-                fontSize={'44px'}
+                fontSize={{ base: '24px', md: '44px'}}
                 lineHeight={'60px'}
                 letterSpacing={'-0.98px'}
                 paddingTop='131.5px'>
-                Join our community today <br /> to<Text color={'#0077FE'} as={'span'}>
-                      {' '} fast-track</Text>{' '}your<Text color={'#0077FE'} as={'span'}  > tech <br /> career
+                Join our community today to<Text color={'#0077FE'} as={'span'}>
+                      {' '} fast-track</Text>{' '}your<Text color={'#0077FE'} as={'span'}  > tech  career
               </Text>
               </Text>
               <Button
@@ -47,8 +47,7 @@ const JoinOurCommunity = () => {
                 _hover={{ bg: '#01E7FF', color: '#ffff' }}>
                 Join Now
               </Button>
-              </Box>
-
+        </Box>
 
       </Box>
       <Box 
@@ -56,8 +55,8 @@ const JoinOurCommunity = () => {
         marginRight={'115.19px'}
       >
         <Image
-            objectFit='cover'
-            maxW={{ base: '100%', sm: '100%' }}
+            objectFit='contain'
+            maxWidth={{ base: '100%', md: '100%' }}
             height={'509px'}
             src={join}
             alt='Caffe Latte'
@@ -65,6 +64,7 @@ const JoinOurCommunity = () => {
       </Box>
 
     </Box>
+    </Container>
   )
 }
 

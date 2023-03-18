@@ -21,23 +21,23 @@ import {
       <Container maxW={'full'} paddingBottom={'100.5px'} backgroundColor={'#F6F7F9'} >
         <Stack
           textAlign={'center'}
-          align={'center'}
+          align={{base:'', md:'center'}}
           spacing={{ base: 8, md: 1 }}
           py={{ base: 20, md: 24 }}
           >
         
           <Heading
-            // width={{md:'700px'}}
+            width={{base:'333.95px', md:'700px'}}
             fontWeight={600}
-            paddingBottom={{base:'120px', md:'24px'}}
+            paddingBottom={{base:'4px', md:'24px'}}
             fontFamily='Epilogue'
             fontSize={{ base: '3xl', sm: '4xl', md: '3rem' }}
-            lineHeight={'24px'}>
-            How to become a member?
+            lineHeight={{base:'29px', md:'24px'}}>
+            How to become a member ?
           </Heading>
           <Text
-          paddingBottom={{base:'120px', md:'24px'}}
-          width= {{md:'693px'}}
+          paddingBottom={{base:'16px', md:'24px'}}
+          width={{base:'333.95px', md:'693px'}}
           height={'56px'}
           fontFamily={'Satoshi'}
           fontStyle={'normal'}
@@ -52,7 +52,7 @@ import {
           <Stack spacing={6} direction={'row'}>
             <Button
                 fontFamily='Epilogue'
-                px={'88px'}
+                px={{base:'74px', md:'88px'}}
                 fontSize={'16px'}
                 color={'#ffffff'}
                 colorScheme={'#0077FE'}
@@ -62,43 +62,19 @@ import {
             </Button>
           </Stack>
         </Stack>
-        <SimpleGrid templateColumns='repeat(auto-fill, minmax(200px, 1fr))' marginLeft={'200px'} marginRight={'164.5px'}>
-        
-        <Card backgroundColor={'transparent'} border='none' variant={'unstyled'} >
-          <CardHeader> <Image src={Group1} Width={'130px'} height={'100%'}/></CardHeader>
-         
-          <Text
-            fontFamily='Epilogue'
-            fontWeight={'600'}
-            paddingTop={'36px'}
-            paddingBottom={'30px'}
-            textAlign={'justify'}
-            fontSize={'30px'}
-            lineHeight={'31px'}
-          >Sign Up</Text>
-          <Text
-            fontFamily={'Satoshi'}
-            textAlign={'start'}
-            fontSize={'20px'}
-            fontWeight={'400'}
-            width={'240px'}
-            lineHeight={'150%'}
-          >Sign up for the Career Growth subscription program.</Text>
-
-        </Card>     
-        <Image src={GroupVector} marginTop={'62px'}/>
-        <Card backgroundColor={'transparent'} border='none' variant={'unstyled'} >
-        <CardHeader>  <Image src={Group2} Width={'130px'} height={'100%'} /> </CardHeader>
-           
+        <Stack direction={{ base: 'column', md:'row' }} width={'1111px'} margin={'0 auto'} >
+          <Card backgroundColor={'transparent'} paddingRight={{base:'',md:'63px'}} border='none' variant={'unstyled'} >
+            <CardHeader> <Image src={Group1} Width={'130px'} height={'100%'}/></CardHeader>
+          
             <Text
               fontFamily='Epilogue'
               fontWeight={'600'}
-              paddingTop={'42px'}
+              paddingTop={'36px'}
               paddingBottom={'30px'}
               textAlign={'justify'}
               fontSize={'30px'}
               lineHeight={'31px'}
-            >Gain Access</Text>
+            >Sign Up</Text>
             <Text
               fontFamily={'Satoshi'}
               textAlign={'start'}
@@ -106,33 +82,57 @@ import {
               fontWeight={'400'}
               width={'240px'}
               lineHeight={'150%'}
-            >Gain access to practical skills training, career guidance, mentorship, and a supportive community of like-minded individuals.</Text>
-          
-   
-      
-        </Card>
-        <Image src={GroupVector2} marginTop={'62px'}/>
-        <Card backgroundColor={'transparent'} border='none' variant={'unstyled'} >
-        <CardHeader> <Image src={Group3}  Width={'130px'} height={'100%'} /></CardHeader>
+            >Sign up for the Career Growth subscription program.</Text>
+
+          </Card>     
+          <Image src={GroupVector} paddingTop={'42px'} Width={'130px'} height={'100%'} display={{base:'none', md:'flex'}}/>
+          <Card backgroundColor={'transparent'} paddingLeft={{base:'',md:'72px'}}  paddingRight={{base:'',md:'63px'}} border='none' variant={'unstyled'} >
+          <CardHeader>  <Image src={Group2} Width={'130px'} height={'100%'} /> </CardHeader>
             
-            <Text
-              fontFamily='Epilogue'
-              fontWeight={'600'}
-              paddingTop={'47px'}
-              paddingBottom={'30px'}
-              textAlign={'justify'}
-              fontSize={'30px'}  
-              lineHeight={'31px'}       
-            >Fast-track</Text>
-            <Text
-              fontFamily={'Satoshi'}
-              textAlign={'start'}
-              fontSize={'20px'}
-              fontWeight={'400'}
-              lineHeight={'150%'}
-            >Fast-track your career in tech and land your dream job.</Text>
-        </Card>
-        </SimpleGrid>
+              <Text
+                fontFamily='Epilogue'
+                fontWeight={'600'}
+                paddingTop={'42px'}
+                paddingBottom={'30px'}
+                textAlign={'justify'}
+                fontSize={'30px'}
+                lineHeight={'31px'}
+              >Gain Access</Text>
+              <Text
+                fontFamily={'Satoshi'}
+                textAlign={'start'}
+                fontSize={'20px'}
+                fontWeight={'400'}
+                width={'240px'}
+                lineHeight={'150%'}
+              >Gain access to practical skills training, career guidance, mentorship, and a supportive community of like-minded individuals.</Text>
+            
+    
+        
+          </Card>
+          <Image src={GroupVector2} paddingTop={'42px'} Width={'130px'} height={'100%'} display={{base:'none', md:'flex'}}/>
+          <Card backgroundColor={'transparent'}  paddingLeft={{base:'',md:'63px'}} border='none' variant={'unstyled'} >
+          <CardHeader> <Image src={Group3}  Width={'130px'} height={'100%'} /></CardHeader>
+              
+              <Text
+                fontFamily='Epilogue'
+                fontWeight={'600'}
+                paddingTop={'47px'}
+                paddingBottom={'30px'}
+                textAlign={'justify'}
+                fontSize={'30px'}  
+                lineHeight={'31px'}       
+              >Fast-track</Text>
+              <Text
+                fontFamily={'Satoshi'}
+                textAlign={'start'}
+                fontSize={'20px'}
+                fontWeight={'400'}
+                lineHeight={'150%'}
+                width={'240px'}
+              >Fast-track your career in tech and land your dream job.</Text>
+          </Card>
+        </Stack>
       </Container>
     );
   }

@@ -11,6 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 .flex{
+    margin-top: 60px;
     display: flex;
     flex-direction:row;
     cursor: pointer;

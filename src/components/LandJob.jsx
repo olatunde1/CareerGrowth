@@ -12,9 +12,13 @@ import {
   
   export default function CallToActionWithIllustration() {
     return (
-      <Box>
-          <Container maxW={'container.lg'} marginBottom={'100.5px'} >
+      <Box
+        margin={'0 auto'}
+        // textAlign={'center'}
+      >
+
         <Stack
+          marginBottom={'100.5px'} 
           width={{ md:'5xl'}}
           textAlign={'center'}
           align={{base:'start', md:'center'}}
@@ -23,29 +27,32 @@ import {
           >
         
           <Heading
-            width={{base:'350.56px', md:'1074px'}}
+            width={{base:'360.56px', md:'1074px'}}
             fontWeight={{base:'500', md:'700'}}
             fontFamily='Epilogue'
-            fontSize={{ base: '36px', sm: '4xl', md: '5.25rem' }}
-            lineHeight={'96.18%'}
-            textAlign={'center'}
+            fontSize={{ base: '38px', md: '84px' }}
+            lineHeight={{base:'96.18%', md:'86px'}}
+            letterSpacing={{base:'0.01em', md:'0px'}}
             >
             
-           Land your dream job in Tech &{' '}
+           Land your dream job in Tech &
             <Text as={'span'} color={'#0077FE'}>
             10x your income.
             </Text>
           </Heading>
           <Text
+          paddingLeft={'16.54px'}
+          paddingRight={'16.54px'}
           paddingBottom={{base:'72px', md:'48px'}}
-          width= {{base:'305.49px', md:'693px'}}
+          width= {{base:'345.49px', md:'693px'}}
           height={'56px'}
           fontFamily={'Satoshi'}
           fontStyle={'normal'}
           fontWeight={'400'}
           fontSize={{base:'16px', md:'20px'}}
           lineHeight={'24px'}
-          // textAlign={{base:'center', md:"center"}}
+         
+          textAlign={'center'}
           letterSpacing={'-0.18px'}
           color={'#001F42'}>
           Get the skills and support you need to land your dream job in tech and multiply your income with our Career Accelerator.
@@ -74,7 +81,6 @@ import {
             </Button>
           </Stack>
         </Stack>
-      </Container>
       </Box>
     );
   }

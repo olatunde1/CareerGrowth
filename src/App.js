@@ -23,11 +23,11 @@ function App() {
           {/* <ColorModeSwitcher justifySelf="flex-end" /> */}
               <NavigationBar />
               <LandJob />
-              <About />
-              <Member />
-              <Testimonial />
-              <JoinOurCommunity />
-              <Faq />
+              {/* <About /> */}
+              {/* <Member /> */}
+              {/* <Testimonial /> */}
+              {/* <JoinOurCommunity /> */}
+              {/* <Faq /> */}
         </Grid>
       </Box>
     </ChakraProvider>

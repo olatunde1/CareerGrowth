@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Box,Image,Text } from "@chakra-ui/react";
+import { Box,Image,Text,Heading,useBreakpointValue } from "@chakra-ui/react";
 import image1 from './images/testimonial.png'
+import testImage from './images/testimonial2.png'
 
 function Testimonials() {
   const testimonialsArray = [
@@ -11,6 +12,7 @@ function Testimonials() {
       description:
         "“I can't thank the Career Growth enough for the incredible impact it's had on my career. With the help of their mentorship program and weekly sessions, I gained the skills and confidence I needed to succeed in interviews and land my dream job. Not only that, but the program also helped me negotiate a higher salary than I ever thought possible. I highly recommend the Career Growth community to anyone looking to take their tech career to the next level!.”",
       image: image1,
+      image2: testImage,
     },
     {
       id: 2,
@@ -42,21 +44,137 @@ function Testimonials() {
   return (
     <Box margin={'0 auto'}>
       
-        {/* //active testimonial */}
-      
+        {/* active testimonial */}
+        <Box>
+        <Text
+        display={{base:'none', md:'block'}}
+            color={'#01E7FF'}
+            fontSize={'14px'}
+            letterSpacing={'1.25px'}
+            textAlign={{base:'center', md:'left'}}
+            fontWeight={'500'}
+            fontFamily='Epilogue'
+            paddingTop={{base:'38.63px',md:'57px'}}
+            paddingBottom={{base:'16px',md:'16px'}}
+            >
+               TESTIMONIALS </Text>
+
+            <Heading
+             display={{base:'none', md:'block'}}
+            fontSize={{ base: '28px', md: '48px', lg: '48px' }}
+            width={{base:'355.74px', md:'606.07px'}}
+            height={{md:'120px'}}
+            textAlign={{base:'center', md:'left'}}
+            lineHeight={{base:'29px', md:'60px'}}
+            marginLeft={{base:'27.13px', md:'0'}}
+            >
+              <Text
+                fontFamily='Epilogue'
+                fontWeight={'600'}
+                color={'#001F42'}
+                lineHeight={{base:'29px', md:'60px'}}
+                fontStyle={'normal'}
+                as={'span'}
+                position={'relative'}
+                _after={{
+                  content: "''",
+                  height: useBreakpointValue({ base: '20%', md: '30%' }),
+                  position: 'absolute',
+                  bottom: 1,
+                  
+                  // left: 0,
+                }}>
+               Hear from 
+              </Text>
+              <Text color={'#0077FE'} as={'span'}>
+              {' '}  our members
+              </Text>{' '}{' '}
+            </Heading>
+        </Box>
       
         <Box
-          width={{base:'374px', md:'1120px'}}
-          height={'500px'}
+          width={{base:'405px', md:'1120px'}}
+          height={{base:'753px', md:'500px'}}
           display={{base: 'column',md:'flex'}}
           backgroundColor={'#EBEBF4'}
-          marginTop={'188px'}
-          borderRadius={'20px'}  
+          // marginTop={{base:'0px',md:'px'}}
+          // borderRadius={'20px'}  
         >
+             <Text color={'#01E7FF'}
+                display={{base:'block', md:'none'}}
+                fontSize={'14px'}
+                letterSpacing={'1.25px'}
+                textAlign={{base:'center', md:'left'}}
+                fontWeight={'500'}
+                fontFamily='Epilogue'
+                paddingTop={{base:'38.63px',md:'57px'}}
+                paddingBottom={{base:'16px',md:'16px'}}
+            >
+               TESTIMONIALS </Text>
+
+            <Heading
+              display={{base:'block', md:'none'}}
+              fontSize={{ base: '28px', md: '48px', lg: '48px' }}
+              width={{base:'355.74px', md:'606.07px'}}
+              height={{md:'120px'}}
+              textAlign={{base:'center', md:'left'}}
+              lineHeight={{base:'29px', md:'60px'}}
+              marginLeft={{base:'27.13px', md:'0'}}
+              marginBottom={'24px'}
+            >
+              <Text
+                fontFamily='Epilogue'
+                fontWeight={'600'}
+                color={'#001F42'}
+                lineHeight={{base:'29px', md:'60px'}}
+                fontStyle={'normal'}
+                as={'span'}
+                position={'relative'}
+                _after={{
+                  content: "''",
+                  height: useBreakpointValue({ base: '20%', md: '30%' }),
+                  position: 'absolute',
+                  bottom: 1,
+                  
+                  // left: 0,
+                }}>
+               Hear from 
+              </Text>
+              <Text color={'#0077FE'} as={'span'}>
+              {' '}  our members
+              </Text>{' '}{' '}
+            </Heading>
+          <Image 
+            src={ testimonialBody.image2}
+            height={{base:'253.9px', md:'500px'}}
+            width={{base:'244.95px', md:'100%'}}
+            marginLeft={{base:'82.03px', md:'85px'}}
+            // paddingTop={{base:'24px', md:''}}
+            borderRadius={'16px'}
+            display={{base:'block', md:'none'}}
+
+            />
+             <Text
+             align={'justify'}
+              width={{base:'', md:'582.29px'}}
+              display={{base:'block', md:'none'}}
+              height={{base:'220px', md:'248px'}}
+              fontSize={{base:'16px', md:'22px'}}
+              fontFamily={'Satoshi'}
+              fontStyle={'normal'}
+              lineHeight={{base:'22px', md:'140%'}}
+              color={'#001F42'}
+              paddingTop={'68.84px'}
+              // paddingBottom={'95.18px'}
+              paddingLeft={'30px'}
+              paddingRight={'34px'}
+
+            >{testimonialBody.description}</Text>
           <Box>
             
             <Text
               // width={{base:'341.6px', md:'580.29px'}}
+              display={{base:'none', md:'block'}}
               height={{base:'220px', md:'248px'}}
               fontSize={{base:'16px', md:'22px'}}
               fontFamily={'Satoshi'}
@@ -70,9 +188,17 @@ function Testimonials() {
             >{testimonialBody.description}</Text>
           </Box>
           
-            <Image src={ testimonialBody.image} height={'500px'} width={'100%'} marginLeft={'85px'} objectFit={'fill'} />
+            <Image 
+
+            src={ testimonialBody.image}
+            height={'500px'} width={'100%'}
+            marginLeft={{base:'', md:'85px'}}
+            objectFit={'fill'}
+            display={{base:'none', md:'block'}}
+            
+            />
           
-        </Box>
+          </Box>
         
   
 
@@ -80,7 +206,7 @@ function Testimonials() {
         {/* testimonial list */}
       
 
-      <Box className="flex"  marginTop={'60px'}>
+      {/* <Box className="flex"  marginTop={'60px'}>
         {testimonialsArray.map((item, idx) => (
           <div
           className="smallCard"
@@ -97,7 +223,7 @@ function Testimonials() {
            
           </div>
         ))}
-      </Box>
+      </Box> */}
     </Box>
     
   );

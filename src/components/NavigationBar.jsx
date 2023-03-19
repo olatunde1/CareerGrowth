@@ -37,7 +37,7 @@ export default function WithSubnavigation() {
         <Flex
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
-          py={{ base: 4, md: 8 }}
+          py={{ base: 8, md: 8 }}
           px={{ base: 1 }}
           marginRight={{base:'0px', md:'158px'}}
         >          

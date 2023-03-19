@@ -87,7 +87,7 @@ import {
 
           </Card>     
           <Image src={GroupVector} paddingTop={'42px'} Width={'130px'} height={'100%'} display={{base:'none', md:'flex'}}/>
-          <Card backgroundColor={'transparent'} paddingLeft={{base:'0px',md:'72px'}}  paddingRight={{base:'0px',md:'63px'}} border='none' variant={'unstyled'} align={{base:'center', md:'start'}} >
+          <Card backgroundColor={'transparent'} paddingLeft={{base:'0px',md:'72px'}}  paddingRight={{base:'0px',md:'0px'}} border='none' variant={'unstyled'} align={{base:'center', md:'start'}} >
           <CardHeader>  <Image src={Group2} Width={'130px'} height={'100%'} /> </CardHeader>
             
               <Text

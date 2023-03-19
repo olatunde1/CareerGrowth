@@ -23,7 +23,7 @@ function App() {
           {/* <ColorModeSwitcher justifySelf="flex-end" /> */}
               <NavigationBar />
               <LandJob />
-              {/* <About /> */}
+              <About />
               {/* <Member /> */}
               {/* <Testimonial /> */}
               {/* <JoinOurCommunity /> */}

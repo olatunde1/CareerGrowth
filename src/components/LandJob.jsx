@@ -18,7 +18,6 @@ import {
       >
 
         <Stack
-          marginBottom={'100.5px'} 
           width={{ md:'5xl'}}
           textAlign={'center'}
           align={{base:'start', md:'center'}}

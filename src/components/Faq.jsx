@@ -12,14 +12,37 @@ const Faq = () => {
     <Box display={'flex'} flexDirection={{ base: 'column', md:'row' }} margin={'0 auto'}>
             <Box marginRight={'42px'} >
                 <Text 
+                    display={{base:'none', md:'block'}}
                      paddingTop={'120px'}
                      paddingBottom={'16px'}
                      color={'#01E7FF'}
                      fontWeight={'500'}
                      fontFamily='Epilogue'
                 >FAQ’S</Text>
+                <Heading
+                    width={'290px'}
+                    display={{base:'block', md:'none'}}
+                    paddingTop={{ base: '44px', md: '0px' }}
+                    fontSize={{ base: '24px', md: '48px' }}
+                    fontWeight={'600'}
+                    marginRight={'64px'}
+                    lineHeight={'24.6px'}
+                    fontFamily='Epilogue'
+                    paddingLeft={'12.08px'}
+                    
+                    >
+                    <Text color={'#001F42'} fontWeight={'700'}                   
+                        >Frequently  {' '}<Text color={'#0077FE'} as={'span'}>
+                        Asked
+                        </Text></Text>
+                        <Text fontWeight={'700'} color={'#0077FE'} as={'span'}>
+                        Questions
+                        </Text>{' '}
+             </Heading>
              <Heading
-             fontSize={'48px'}
+             display={{base:'none', md:'block'}}
+             paddingTop={{ base: '44px', md: '0px' }}
+             fontSize={{ base: '24px', md: '48px' }}
              fontWeight={'600'}
              marginRight={'64px'}
              lineHeight={'60px'}
@@ -53,8 +76,8 @@ const Faq = () => {
             </Box>
             <Box
                
-                width={{base:'1100px', md:'640px'}}
-                paddingTop={'130px'}
+                width={{base:'410px', md:'640px'}}
+                paddingTop={{base:'15.5px', md:'130px'}}
             >
             <Accordion allowToggle>
                 <AccordionItem
@@ -65,7 +88,7 @@ const Faq = () => {
                     <h2>
                     <AccordionButton paddingTop={'32px'} pb={'16px'}>
                         <Box as="span" flex='1' textAlign='left' color={'#001F42'}
-                        fontSize={'22px'}
+                        fontSize={{ base: '16px', md: '22px'}}
                         fontFamily={'Satoshi'}
                         fontWeight={'500'}
                         fontStyle={'normal'}
@@ -81,7 +104,7 @@ const Faq = () => {
                         pt={'16px'}
                         pb={'32px'}
                         fontFamily={'Satoshi'}
-                        fontSize={'16px'}
+                        fontSize={{ base: '14px', md: '16px'}}
                         width={'640px'}
                         textAlign={'justify'}
                         
@@ -102,7 +125,7 @@ const Faq = () => {
                     <AccordionButton paddingTop={'32px'}paddingBottom={'16px'}>
                         <Box as="span" flex='1' textAlign='left'
                             color={'#001F42'}
-                            fontSize={'22px'}
+                            fontSize={{ base: '16px', md: '22px'}}
                             fontFamily={'Satoshi'}
                             fontWeight={'500'}
                             fontStyle={'normal'}
@@ -117,7 +140,7 @@ const Faq = () => {
                         pt={'16px'}
                         pb={'32px'}
                         fontFamily={'Satoshi'}
-                        fontSize={'16px'}
+                        fontSize={{ base: '14px', md: '16px'}}
                         width={'640px'}
                         textAlign={'justify'}
                     >
@@ -136,7 +159,7 @@ const Faq = () => {
                     <AccordionButton paddingTop={'32px'}paddingBottom={'32px'}>
                         <Box as="span" flex='1' textAlign='left'
                              color={'#001F42'}
-                             fontSize={'22px'}
+                             fontSize={{ base: '16px', md: '22px'}}
                              fontWeight={'500'}
                              fontFamily={'Satoshi'}
                              fontStyle={'normal'}
@@ -151,7 +174,7 @@ const Faq = () => {
                         pt={'16px'}
                         pb={'32px'}
                         fontFamily={'Satoshi'}
-                        fontSize={'16px'}
+                        fontSize={{ base: '14px', md: '16px'}}
                         width={'640px'}
                         textAlign={'justify'}
                     >
@@ -170,7 +193,7 @@ const Faq = () => {
                     <AccordionButton paddingTop={'32px'}paddingBottom={'32px'}>
                         <Box as="span" flex='1' textAlign='left'
                              color={'#001F42'}
-                             fontSize={'22px'}
+                             fontSize={{ base: '16px', md: '22px'}}
                              fontWeight={'500'}
                              fontStyle={'normal'}
                              lineHeight={'140%'}
@@ -185,7 +208,7 @@ const Faq = () => {
                         pt={'16px'}
                         pb={'32px'}
                         fontFamily={'Satoshi'}
-                        fontSize={'16px'}
+                        fontSize={{ base: '14px', md: '16px'}}
                         width={'640px'}
                         textAlign={'justify'}
                     >
@@ -198,7 +221,7 @@ const Faq = () => {
             </Accordion>
             
             </Box>
-            <Box marginTop={'44px'} textAlign={'center'} display={{ base: 'block', md:'none' }}   backgroundColor={'#001F42'} color={'#ffffff'}>
+            {/* <Box marginTop={'44px'} textAlign={'center'} display={{ base: 'block', md:'none' }}   backgroundColor={'#001F42'} color={'#ffffff'}>
                  <Text
                  
                     fontSize={'14px'}
@@ -215,7 +238,7 @@ const Faq = () => {
                      textDecoration={'underline'}
                      fontFamily='Inter'
                 > <a href="hi@careergrowth.com">hi@careergrowth.com</a></Text>
-            </Box>
+            </Box> */}
     </Box> 
   
   )

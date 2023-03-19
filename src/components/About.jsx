@@ -37,14 +37,18 @@ import {
             fontWeight={'500'}
             fontFamily='Epilogue'>
                 ABOUT</Text>
+
             <Heading fontSize={{ base: '28px', md: '48px', lg: '48px' }}
-            width={{base:'335.74px', md:'478px'}}
+            width={{base:'355.74px', md:'478px'}}
             height={{md:'120px'}}
             textAlign={{base:'center', md:'left'}}
-            lineHeight={{base:'29px', md:'60px'}}>
+            lineHeight={{base:'29px', md:'60px'}}
+            paddingLeft={{base:'16px', md:'0'}}
+            >
               <Text
                 fontFamily='Epilogue'
                 fontWeight={'600'}
+                color={'#001F42'}
                 lineHeight={{base:'29px', md:'60px'}}
                 fontStyle={'normal'}
                 as={'span'}
@@ -54,7 +58,8 @@ import {
                   height: useBreakpointValue({ base: '20%', md: '30%' }),
                   position: 'absolute',
                   bottom: 1,
-                  left: 0,
+                  
+                  // left: 0,
                 }}>
                Why you should 
               </Text>
@@ -67,9 +72,9 @@ import {
               </Text>{' '}
             </Heading>
             
-            <Grid templateColumns='repeat(2, 1fr)' paddingTop={'35.15px'} gap={4}>
+            <Grid templateColumns='repeat(2, 1fr)' paddingTop={'35.15px'} gap={4} >
             <GridItem w={{ md:'100%'}} h={{base:'', md:'116.85px'}}  >
-                <Image src={career} width={{base:'64px', md:'104px'}}/>
+                <Image src={career} width={{base:'64px', md:'104px'}} marginLeft={{base:'17.31px', md:'0px'}}/>
                 <Text
                     paddingTop={'16px'}
                     paddingLeft={'31.59px'}
@@ -81,7 +86,7 @@ import {
                 >Career Guidance</Text>
             </GridItem>
             <GridItem w='100%' h={{base:'', md:'116.85px'}}  >
-                <Image src={supportive} width={{base:'64px', md:'104px'}}/>
+                <Image src={supportive} width={{base:'64px', md:'104px'}} marginLeft={{base:'17.31px', md:'0px'}}/>
                 <Text
                 paddingTop={'16px'}
                 paddingLeft={'31.59px'}
@@ -92,7 +97,7 @@ import {
                 letterSpacing={'-0.18px'}>Supportive Network</Text>
             </GridItem>
             <GridItem w='100%'h={{base:'', md:'116.85px'}}  >
-                <Image src={job} width={{base:'64px', md:'104px'}}/>
+                <Image src={job} width={{base:'64px', md:'104px'}} marginLeft={{base:'17.31px', md:'0px'}}/>
                 <Text 
                     paddingTop={'16px'}
                     paddingLeft={'31.59px'}
@@ -103,7 +108,7 @@ import {
                     letterSpacing={'-0.18px'}>Job Opportunity</Text>
             </GridItem>
             <GridItem w='100%' h={{base:'', md:'116.85px'}}  >
-                <Image src={mentorship} width={{base:'64px', md:'104px'}}/>
+                <Image src={mentorship} width={{base:'64px', md:'104px'}} marginLeft={{base:'17.31px', md:'0px'}}/>
                 <Text
                     paddingTop={'16px'}
                     paddingLeft={'31.59px'}

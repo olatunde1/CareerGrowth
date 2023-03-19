@@ -24,7 +24,7 @@ function App() {
               <NavigationBar />
               <LandJob />
               <About />
-              {/* <Member /> */}
+              <Member />
               {/* <Testimonial /> */}
               {/* <JoinOurCommunity /> */}
               {/* <Faq /> */}

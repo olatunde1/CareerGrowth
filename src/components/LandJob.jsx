@@ -13,6 +13,7 @@ import {
   export default function CallToActionWithIllustration() {
     return (
       <Box
+      
         margin={'0 auto'}
         // textAlign={'center'}
       >

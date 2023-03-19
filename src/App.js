@@ -26,8 +26,8 @@ function App() {
               <About />
               <Member />
               <Testimonial />
-              {/* <JoinOurCommunity /> */}
-              {/* <Faq /> */}
+              <JoinOurCommunity />
+              <Faq />
         </Grid>
       </Box>
     </ChakraProvider>

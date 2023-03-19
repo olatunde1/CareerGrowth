@@ -9,9 +9,7 @@ import React from 'react'
 
 const Faq = () => {
   return (
-   
-        <Container maxW={'container'}>
-            <Box display={'flex'} flexDirection={{ base: 'column', md:'row' }}>
+    <Box display={'flex'} flexDirection={{ base: 'column', md:'row' }} margin={'0 auto'}>
             <Box marginRight={'42px'} >
                 <Text 
                      paddingTop={'120px'}
@@ -218,8 +216,7 @@ const Faq = () => {
                      fontFamily='Inter'
                 > <a href="hi@careergrowth.com">hi@careergrowth.com</a></Text>
             </Box>
-        </Box> 
-        </Container>
+    </Box> 
   
   )
 }

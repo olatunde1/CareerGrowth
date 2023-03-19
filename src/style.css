@@ -10,6 +10,8 @@
 html{
     scroll-behavior: smooth;
 }
+
+
 .flex{
     margin-top: 60px;
     display: flex;
@@ -18,8 +20,21 @@ html{
 }
 
 .smallCard{
-    border: 2px solid gray;
+    width: 305px;
+    display: flex;
+    border-bottom: 2px dashed #0077FE;
     margin-right: 2rem;
-    padding:8px 32px;
+    padding:8px 16px;
     margin: 8px;
+}
+
+@keyframes move{
+    from{opacity: 0.1;}
+    to{
+        opacity: 1;
+    }
+}
+
+.textBody{
+    animation: move 1s ease-in;
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Box,Image,Text,Heading,useBreakpointValue } from "@chakra-ui/react";
 import image1 from './images/testimonial.png'
 import testImage from './images/testimonial2.png'
+import adebiyi from './images/adebiyi.png'
 
 function Testimonials() {
   const testimonialsArray = [
@@ -13,36 +14,41 @@ function Testimonials() {
         "“I can't thank the Career Growth enough for the incredible impact it's had on my career. With the help of their mentorship program and weekly sessions, I gained the skills and confidence I needed to succeed in interviews and land my dream job. Not only that, but the program also helped me negotiate a higher salary than I ever thought possible. I highly recommend the Career Growth community to anyone looking to take their tech career to the next level!.”",
       image: image1,
       image2: testImage,
+      passport: adebiyi,
+      jobDesc: "Full-stack developer, Stealth®"
     },
-    {
-      id: 2,
-      name: "Afoo seun",
-      title: "Good CO",
-      description:
-        "lorem Ipsum is Lorem Ipsum lorem Ipsum is Lorem Ipsum lorem Ipsum is Lorem Ipsum ",
-      image: "http://placehold.it/",
-    },
-    {
-      id: 3,
-      name: "Kuti Ola",
-      title: "foood COmpany",
-      description:
-        "lorem Ipsum is Lorem Ipsum lorem Ipsum is Lorem Ipsum lorem Ipsum is Lorem Ipsum ",
-      image: "http://placehold.it/",
-    },
-    {
-      id: 4,
-      name: "Abiola Babatunde",
-      title: "Good COmpany",
-      description:
-        "lorem Ipsum is Lorem Ipsum lorem Ipsum is Lorem Ipsum lorem Ipsum is Lorem Ipsum ",
-      image: "http://placehold.it/",
-    },
+    // {
+    //   id: 2,
+    //   name: "Shayla Nico",
+    //   title: "Good CO",
+    //   description:
+    //     "“I can't thank the Career Growth enough for the incredible impact it's had on my career. With the help of their mentorship program and weekly sessions, I gained the skills and confidence I needed to succeed in interviews and land my dream job. Not only that, but the program also helped me negotiate a higher salary than I ever thought possible. I highly recommend the Career Growth community to anyone looking to take their tech career to the next level!.”",
+    //   image: image1,
+    //   image2: testImage,
+    //   passport: adebiyi,
+    //   jobDesc: "Data Analyst, Luta®"
+    // },
+    // {
+    //   id: 3,
+    //   name: "Kuti Ola",
+    //   title: "foood COmpany",
+    //   description:
+    //     "lorem Ipsum is Lorem Ipsum lorem Ipsum is Lorem Ipsum lorem Ipsum is Lorem Ipsum ",
+    //   image: "http://placehold.it/",
+    // },
+    // {
+    //   id: 4,
+    //   name: "Abiola Babatunde",
+    //   title: "Good COmpany",
+    //   description:
+    //     "lorem Ipsum is Lorem Ipsum lorem Ipsum is Lorem Ipsum lorem Ipsum is Lorem Ipsum ",
+    //   image: "http://placehold.it/",
+    // },
   ];
   const [testimonialBody, setTestimonialBody] = useState(testimonialsArray[0]);
 
   return (
-    <Box margin={'0 auto'}>
+    <Box margin={'0 auto'} paddingBottom={'129px'}>
       
         {/* active testimonial */}
         <Box>
@@ -173,6 +179,7 @@ function Testimonials() {
           <Box>
             
             <Text
+            className="textBody"
               // width={{base:'341.6px', md:'580.29px'}}
               display={{base:'none', md:'block'}}
               height={{base:'220px', md:'248px'}}
@@ -199,14 +206,14 @@ function Testimonials() {
             />
           
           </Box>
-        
-  
 
-      
         {/* testimonial list */}
       
-
-      {/* <Box className="flex"  marginTop={'60px'}>
+      <Box
+        className="flex"
+        marginTop={'60px'}
+        marginRight={'75px'}
+        >
         {testimonialsArray.map((item, idx) => (
           <div
           className="smallCard"
@@ -216,14 +223,15 @@ function Testimonials() {
               setTestimonialBody(item);
             }}
           >
+            <Image src={testimonialBody.passport} marginRight={'20px'} width={'60.68'} height={'61.96'} />
             <Box>
               <p>{testimonialBody.name}</p>
-              <p>Name and title</p>
+              <p>{testimonialBody.jobDesc}</p>
             </Box>
            
           </div>
         ))}
-      </Box> */}
+      </Box>
     </Box>
     
   );

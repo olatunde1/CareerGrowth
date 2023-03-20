@@ -9,6 +9,7 @@ import {
   } from '@chakra-ui/react';
   import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
   import {faArrowUpRightDots} from '@fortawesome/free-solid-svg-icons'
+  import { Zoom,Fade } from 'react-reveal';
   
   export default function CallToActionWithIllustration() {
     return (
@@ -17,7 +18,6 @@ import {
         margin={'0 auto'}
         // textAlign={'center'}
       >
-
         <Stack
           width={{ md:'5xl'}}
           textAlign={'center'}
@@ -25,21 +25,23 @@ import {
           spacing={{ base: 8, md: 10 }}
           py={{ base: '48px', md: 32 }}
           >
-        
-          <Heading
-            width={{base:'360.56px', md:'1074px'}}
-            fontWeight={{base:'500', md:'700'}}
-            fontFamily='Epilogue'
-            fontSize={{ base: '38px', md: '84px' }}
-            lineHeight={{base:'96.18%', md:'86px'}}
-            letterSpacing={{base:'0.01em', md:'0px'}}
-            >
-            
-           Land your dream job in Tech &
-            <Text as={'span'} color={'#0077FE'}>
-            10x your income.
-            </Text>
-          </Heading>
+          <Zoom>
+            <Heading
+              width={{base:'360.56px', md:'1074px'}}
+              fontWeight={{base:'500', md:'700'}}
+              fontFamily='Epilogue'
+              fontSize={{ base: '38px', md: '84px' }}
+              lineHeight={{base:'96.18%', md:'86px'}}
+              letterSpacing={{base:'0.01em', md:'0px'}}
+              >
+              
+            Land your dream job in Tech &
+              <Text as={'span'} color={'#0077FE'}>
+              10x your income.
+              </Text>
+            </Heading>
+          </Zoom>
+          <Fade top>
           <Text
           paddingLeft={'16.54px'}
           paddingRight={'16.54px'}
@@ -57,6 +59,8 @@ import {
           color={'#001F42'}>
           Get the skills and support you need to land your dream job in tech and multiply your income with our Career Accelerator.
           </Text>
+          </Fade>
+          
           <Stack spacing={6} direction={'row'}>
             <Button
                 fontFamily='Epilogue'

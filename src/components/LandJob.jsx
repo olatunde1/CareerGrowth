@@ -25,7 +25,7 @@ import {
           spacing={{ base: 8, md: 10 }}
           py={{ base: '48px', md: 32 }}
           >
-          <Bounce left cascade duration={1000} delay={1000} >
+          <Bounce left cascade  >
             <Heading
               width={{base:'360.56px', md:'1074px'}}
               fontWeight={{base:'500', md:'700'}}

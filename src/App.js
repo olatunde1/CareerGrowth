@@ -13,14 +13,21 @@ import Member from './components/Member'
 import Testimonial from './components/Testimonial.jsx'
 import JoinOurCommunity from './components/JoinOurCommunity'
 import Faq from './components/Faq';
+import { motion, useScroll } from "framer-motion";
+
 import './style.css'
 
 function App() {
+  const { scrollYProgress } = useScroll();
   return (
     <ChakraProvider theme={theme}>
       <Box>
         <Grid>
           {/* <ColorModeSwitcher justifySelf="flex-end" /> */}
+          <motion.div
+            className="progress-bar"
+            style={{ scaleX: scrollYProgress }}
+          />
               <NavigationBar />
               <LandJob />
               <About />

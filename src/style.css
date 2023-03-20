@@ -6,7 +6,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+Body{
+    --blue: #0077FE;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -38,3 +40,14 @@ html{
 .textBody{
     animation: move 1s ease-in;
 }
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: var(--blue);
+    transform-origin: 0%;
+    z-index: 1;
+  }

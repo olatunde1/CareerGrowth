@@ -25,9 +25,10 @@ const JoinOurCommunity = () => {
         <Box>
           <Slide left cascade>
               <Text
+               
                 margin={'0 auto'}
                 width={{ base: '360.86px', md: '740px'}}
-                paddingLeft={{ base: '28px', md: '160px'}}
+                paddingLeft={{ base: '22px', md: '160px'}}
                 fontFamily='Epilogue'
                 fontStyle={'normal'}
                 fontWeight={'600'}
@@ -45,7 +46,7 @@ const JoinOurCommunity = () => {
                   fontFamily='Epilogue'
                   variant='solid'
                   colorScheme='blue'
-                  marginLeft={{ base: '91px', md: '160px'}}
+                  marginLeft={{ base: '78px', md: '160px'}}
                   color={'#ffffff'}
                   px={'92px'}
                   backgroundColor={'#01E7FF'}
@@ -58,7 +59,7 @@ const JoinOurCommunity = () => {
 
       </Box>
       <Box 
-        marginLeft={{ base: '28.28px', md: '150.14px' }}  borderRadius={'24px'}
+        marginLeft={{ base: '0px', md: '150.14px' }}  borderRadius={'24px'}
         display={{base:'block', md:'none'}}
         // marginRight={'115.19px'}
       >

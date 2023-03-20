@@ -3,6 +3,7 @@ import { Box,Image,Text,Heading,useBreakpointValue } from "@chakra-ui/react";
 import image1 from './images/testimonial.png'
 import testImage from './images/testimonial2.png'
 import adebiyi from './images/adebiyi.png'
+import shayla from './images/shayla.png'
 
 function Testimonials() {
   const testimonialsArray = [
@@ -17,17 +18,17 @@ function Testimonials() {
       passport: adebiyi,
       jobDesc: "Full-stack developer, Stealth®"
     },
-    // {
-    //   id: 2,
-    //   name: "Shayla Nico",
-    //   title: "Good CO",
-    //   description:
-    //     "“With the help of their mentorship program and weekly sessions, I gained the skills and confidence I needed to succeed in interviews and land my dream job. Not only that, but the program also helped me negotiate a higher salary than I ever thought possible. I highly recommend the Career Growth community to anyone looking to take their tech career to the next level!.”",
-    //   image: image1,
-    //   image2: testImage,
-    //   passport: adebiyi,
-    //   jobDesc: "Data Analyst, Luta®"
-    // },
+    {
+      id: 2,
+      name: "Shayla Nico",
+      title: "Good CO",
+      description:
+        "“With the help of their mentorship program and weekly sessions, I gained the skills and confidence I needed to succeed in interviews and land my dream job. Not only that, but the program also helped me negotiate a higher salary than I ever thought possible. I highly recommend the Career Growth community to anyone looking to take their tech career to the next level!.”",
+      image: image1,
+      image2: testImage,
+      passport: shayla,
+      jobDesc: "Data Analyst, Luta®"
+    },
     // {
     //   id: 3,
     //   name: "Kuti Ola",
@@ -196,7 +197,7 @@ function Testimonials() {
           </Box>
           
             <Image 
-
+              className={'passPort'}
             src={ testimonialBody.image}
             height={'500px'} width={'100%'}
             marginLeft={{base:'', md:'85px'}}
@@ -210,14 +211,14 @@ function Testimonials() {
         {/* testimonial list */}
       
       <Box
-        display={{base:'column', md:'row'}} 
+        display={{base:'column', md:'flex'}} 
         className="flex"
         marginTop={'60px'}
         marginRight={'75px'}
         >
         {testimonialsArray.map((item, idx) => (
           <div
-            className="smallCard"
+            className={` ${item.id===testimonialBody.id?'active':'inActive'} smallCard`}
             key={idx}
             onClick={() => {
               // console.log(item)
@@ -225,10 +226,24 @@ function Testimonials() {
             }}
           >
             <Image 
-            src={testimonialBody.passport} marginRight={'20px'} width={'60.68'} height={'61.96'} />
+            src={item.passport}
+            marginRight={'20px'}
+            width={'60.68'} height={'61.96'}  />
             <Box>
-              <p>{testimonialBody.name}</p>
-              <p>{testimonialBody.jobDesc}</p>
+              <Text
+                paddingTop={'6px'}
+                className="userName"
+                fontFamily={'Epilogue'}
+                fontWeight={'500'}
+                fontSize={'18px'}
+                lineHeight={'140%'}
+              >{item.name}</Text>
+              <Text
+                fontFamily={'Satoshi'}
+                fontWeight={'500'}
+                fontSize={'14px'}
+                lineHeight={'140%'}
+              >{item.jobDesc}</Text>
             </Box>
            
           </div>

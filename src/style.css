@@ -16,8 +16,8 @@ html{
 
 .flex{
     margin-top: 60px;
-    display: flex;
-    flex-direction:row;
+    /* display: flex; */
+    /* flex-direction:row; */
     cursor: pointer;
 }
 
@@ -25,8 +25,8 @@ html{
     width: 305px;
     display: flex;
     border-bottom: 2px dashed #0077FE;
-    margin-right: 2rem;
-    padding:8px 16px;
+    margin-right:2rem;
+    padding:8px 8px;
     margin: 8px;
 }
 
@@ -50,4 +50,11 @@ html{
     background: var(--blue);
     transform-origin: 0%;
     z-index: 1;
-  }
+ }
+
+ .active .userName{
+    color: #0077FE;
+ }
+ .inActive{
+    color: gray;
+ }

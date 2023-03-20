@@ -2,7 +2,7 @@ import React from "react"
 import { Box, Image,Text,Button,Container } from '@chakra-ui/react'
 import join from './images/Image.png'
 import join2 from './images/join2.png'
-import { Zoom,Fade,Roll,Bounce,Flip,Slide,Rotate } from 'react-reveal';
+import { Fade,Zoom} from 'react-awesome-reveal';
 const JoinOurCommunity = () => {
   return (
     // <Container maxW={'container'}>
@@ -23,7 +23,7 @@ const JoinOurCommunity = () => {
         lineHeight={'60px'}
       >
         <Box>
-          <Slide left cascade>
+          <Fade left cascade>
               <Text
                
                 margin={'0 auto'}
@@ -39,8 +39,8 @@ const JoinOurCommunity = () => {
                 Join our community today to<Text color={'#0077FE'} as={'span'}>
                       {' '} fast-track</Text>{' '}your<Text color={'#0077FE'} as={'span'}  > tech  career
               </Text>
-              </Text></Slide>
-              <Slide right cascade>
+              </Text></Fade>
+              <Fade right cascade>
                 <Button
                   marginTop={'18px'}
                   fontFamily='Epilogue'
@@ -53,7 +53,7 @@ const JoinOurCommunity = () => {
                   _hover={{ bg: '#01E7FF', color: '#ffff' }}>
                   Join Now
                 </Button>
-              </Slide>
+              </Fade>
               
         </Box>
 

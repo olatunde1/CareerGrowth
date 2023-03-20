@@ -4,7 +4,7 @@ import { Box,Text, Accordion,
     AccordionPanel,
     AccordionIcon,
     Heading,
-    Container, } from '@chakra-ui/react'
+    } from '@chakra-ui/react'
 import React from 'react'
 
 const Faq = () => {

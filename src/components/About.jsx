@@ -8,7 +8,8 @@ import {
     useBreakpointValue,
     Grid, GridItem, Container
   } from '@chakra-ui/react';
-  import { Fade, Zoom,LightSpeed } from "react-reveal"; 
+
+  import { Fade,Zoom} from 'react-awesome-reveal';
   import join from './images/join.png'
   import career from './images/career.png'
   import job from './images/job.png'
@@ -82,7 +83,7 @@ import {
             <Grid templateColumns='repeat(2, 1fr)' paddingTop={'35.15px'} gap={4} >
             <GridItem w={{ md:'100%'}} h={{base:'', md:'116.85px'}}  >
 
-            <LightSpeed left cascade>
+            <Zoom left cascade>
                 <Image src={career} width={{base:'64px', md:'104px'}} marginLeft={{base:'17.31px', md:'0px'}}/>
                 <Text
                     paddingTop={'16px'}
@@ -93,11 +94,11 @@ import {
                     lineHeight={'28px'}
                     letterSpacing={'-0.18px'}
                 >Career Guidance</Text>
-            </LightSpeed>
+            </Zoom>
                 
             </GridItem>
             <GridItem w='100%' h={{base:'', md:'116.85px'}}  >
-            <LightSpeed right cascade>
+            <Zoom>
                 <Image src={supportive} width={{base:'64px', md:'104px'}} marginLeft={{base:'17.31px', md:'0px'}}/>
                 <Text
                 paddingTop={'16px'}
@@ -107,11 +108,11 @@ import {
                 fontWeight={'500'}
                 lineHeight={'28px'}
                 letterSpacing={'-0.18px'}>Supportive Network</Text>
-            </LightSpeed>
+            </Zoom>
                 
             </GridItem>
             <GridItem w='100%'h={{base:'', md:'116.85px'}}  >
-            <LightSpeed right cascade>
+            <Zoom right cascade>
               <Image src={job} width={{base:'64px', md:'104px'}} marginLeft={{base:'17.31px', md:'0px'}}/>
                 <Text 
                     paddingTop={'16px'}
@@ -121,11 +122,11 @@ import {
                     fontWeight={'500'}
                     lineHeight={'28px'}
                     letterSpacing={'-0.18px'}>Job Opportunity</Text>
-            </LightSpeed>
+            </Zoom>
                 
             </GridItem>
             <GridItem w='100%' h={{base:'', md:'116.85px'}}  >
-            <LightSpeed left cascade>
+            <Zoom left cascade>
             <Image src={mentorship} width={{base:'64px', md:'104px'}} marginLeft={{base:'17.31px', md:'0px'}}/>
                 <Text
                     paddingTop={'16px'}
@@ -135,7 +136,7 @@ import {
                     fontWeight={'500'}
                     lineHeight={'28px'}
                     letterSpacing={'-0.18px'}>Mentorship</Text>
-            </LightSpeed>
+            </Zoom>
                 
             </GridItem>
             </Grid>

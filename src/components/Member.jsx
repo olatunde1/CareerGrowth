@@ -8,7 +8,7 @@ import {
     Button,
     Card, CardHeader, SimpleGrid
   } from '@chakra-ui/react';
-  import { Zoom,Fade,Roll,Bounce,Flip } from 'react-reveal';
+  import { Fade,Zoom} from 'react-awesome-reveal';
 
   import Group1 from './images/Group1.png'
   import Group2 from './images/Group2.png'
@@ -82,7 +82,7 @@ import {
               fontSize={'30px'}
               lineHeight={'31px'}
             >Sign Up</Text> 
-              <Roll left cascade>
+              <Zoom left cascade>
             <Text
               fontFamily={'Satoshi'}
               textAlign={{base:'center', md:'start'}}
@@ -90,16 +90,16 @@ import {
               fontWeight={'400'}
               width={{base:'303px', md:'240px'}}
               lineHeight={'150%'}
-            >Sign up for the Career Growth subscription program.</Text></Roll>
+            >Sign up for the Career Growth subscription program.</Text></Zoom>
 
           </Card>   
           <Image src={GroupVector} paddingTop={'42px'} Width={'130px'} height={'100%'} display={{base:'none', md:'flex'}}/>
           <Card backgroundColor={'transparent'} paddingLeft={{base:'0px',md:'72px'}}  paddingRight={{base:'0px',md:'0px'}} border='none' variant={'unstyled'} align={{base:'center', md:'start'}} >
           <CardHeader> 
-            <Bounce duration={1000} delay={1000}>
+            <Fade duration={1000} delay={1000}>
               <Image src={Group2} Width={'130px'} height={'100%'} />  
-            </Bounce>  </CardHeader>
-            <Roll right cascade>
+            </Fade>  </CardHeader>
+            <Zoom right cascade>
               <Text
                 fontFamily='Epilogue'
                 fontWeight={'600'}
@@ -116,15 +116,13 @@ import {
                 fontWeight={'400'}
                 width={{base:'303px', md:'240px'}}
                 lineHeight={'150%'}
-              >Gain access to practical skills training, career guidance, mentorship, and a supportive community of like-minded individuals.</Text></Roll>
-            
-    
-        
+              >Gain access to practical skills training, career guidance, mentorship, and a supportive community of like-minded individuals.</Text></Zoom>
+      
           </Card>
           <Image src={GroupVector2} paddingTop={'42px'} Width={'130px'} height={'100%'} display={{base:'none', md:'flex'}}/>
           <Card backgroundColor={'transparent'}  paddingLeft={{base:'opx',md:'63px'}} border='none' variant={'unstyled'} align={{base:'center', md:'start'}} >
           <CardHeader> <Image src={Group3}  Width={'130px'} height={'100%'} /></CardHeader>
-          <Roll down cascade>
+          <Zoom down cascade>
               <Text
                 fontFamily='Epilogue'
                 fontWeight={'600'}
@@ -141,7 +139,7 @@ import {
                 fontWeight={'400'}
                 lineHeight={'150%'}
                 width={{base:'303px', md:'240px'}}
-              >Fast-track your career in tech and land your dream job.</Text></Roll>
+              >Fast-track your career in tech and land your dream job.</Text></Zoom>
           </Card>
         </Stack>
       </Box>

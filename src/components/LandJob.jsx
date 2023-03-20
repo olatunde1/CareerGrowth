@@ -9,7 +9,7 @@ import {
   } from '@chakra-ui/react';
   import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
   import {faArrowUpRightDots} from '@fortawesome/free-solid-svg-icons'
-  import { Zoom,Fade,Roll,Bounce } from 'react-reveal';
+  import { Fade,Zoom} from 'react-awesome-reveal';
   
   export default function CallToActionWithIllustration() {
     return (
@@ -25,7 +25,7 @@ import {
           spacing={{ base: 8, md: 10 }}
           py={{ base: '48px', md: 32 }}
           >
-          <Bounce left cascade  >
+          <Zoom left cascade  >
             <Heading
               width={{base:'360.56px', md:'1074px'}}
               fontWeight={{base:'500', md:'700'}}
@@ -40,7 +40,7 @@ import {
               10x your income.
               </Text>
             </Heading>
-          </Bounce>
+          </Zoom>
           <Fade top>
           <Text
           paddingLeft={'16.54px'}

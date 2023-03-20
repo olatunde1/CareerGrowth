@@ -9,7 +9,7 @@ import React from 'react'
 
 const Faq = () => {
   return (
-    <Box display={'flex'} flexDirection={{ base: 'column', md:'row' }} margin={'0 auto'}>
+    <Box display={'flex'} flexDirection={{ base: 'column', md:'row' }} >
             <Box marginRight={'42px'} >
                 <Text 
                     display={{base:'none', md:'block'}}
@@ -221,7 +221,12 @@ const Faq = () => {
             </Accordion>
             
             </Box>
-            <Box marginTop={'44px'}  textAlign={'center'} display={{ base: 'block', md:'none' }}   backgroundColor={'#001F42'} color={'#ffffff'}>
+            <Box
+                
+                marginTop={'44px'}
+                textAlign={'center'}
+                display={{ base: 'block', md:'none' }}
+                backgroundColor={'#001F42'} color={'#ffffff'}>
                  <Text
                     paddingTop={'14px'}
                     paddingLeft={'64px'}

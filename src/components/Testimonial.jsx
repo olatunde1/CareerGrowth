@@ -22,7 +22,7 @@ function Testimonials() {
     //   name: "Shayla Nico",
     //   title: "Good CO",
     //   description:
-    //     "“I can't thank the Career Growth enough for the incredible impact it's had on my career. With the help of their mentorship program and weekly sessions, I gained the skills and confidence I needed to succeed in interviews and land my dream job. Not only that, but the program also helped me negotiate a higher salary than I ever thought possible. I highly recommend the Career Growth community to anyone looking to take their tech career to the next level!.”",
+    //     "“With the help of their mentorship program and weekly sessions, I gained the skills and confidence I needed to succeed in interviews and land my dream job. Not only that, but the program also helped me negotiate a higher salary than I ever thought possible. I highly recommend the Career Growth community to anyone looking to take their tech career to the next level!.”",
     //   image: image1,
     //   image2: testImage,
     //   passport: adebiyi,
@@ -210,6 +210,7 @@ function Testimonials() {
         {/* testimonial list */}
       
       <Box
+        display={{base:'column', md:'row'}} 
         className="flex"
         marginTop={'60px'}
         marginRight={'75px'}
@@ -223,7 +224,8 @@ function Testimonials() {
               setTestimonialBody(item);
             }}
           >
-            <Image src={testimonialBody.passport} marginRight={'20px'} width={'60.68'} height={'61.96'} />
+            <Image 
+            src={testimonialBody.passport} marginRight={'20px'} width={'60.68'} height={'61.96'} />
             <Box>
               <p>{testimonialBody.name}</p>
               <p>{testimonialBody.jobDesc}</p>

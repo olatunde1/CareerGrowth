@@ -221,9 +221,9 @@ const Faq = () => {
             </Accordion>
             
             </Box>
-            {/* <Box marginTop={'44px'} textAlign={'center'} display={{ base: 'block', md:'none' }}   backgroundColor={'#001F42'} color={'#ffffff'}>
+            <Box marginTop={'44px'}  textAlign={'center'} display={{ base: 'block', md:'none' }}   backgroundColor={'#001F42'} color={'#ffffff'}>
                  <Text
-                 
+                    paddingLeft={'64px'}
                     fontSize={'14px'}
                     width={'342px'}
                     marginBottom={'8px'}
@@ -238,7 +238,7 @@ const Faq = () => {
                      textDecoration={'underline'}
                      fontFamily='Inter'
                 > <a href="hi@careergrowth.com">hi@careergrowth.com</a></Text>
-            </Box> */}
+            </Box>
     </Box> 
   
   )

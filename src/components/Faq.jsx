@@ -223,6 +223,7 @@ const Faq = () => {
             </Box>
             <Box marginTop={'44px'}  textAlign={'center'} display={{ base: 'block', md:'none' }}   backgroundColor={'#001F42'} color={'#ffffff'}>
                  <Text
+                    paddingTop={'14px'}
                     paddingLeft={'64px'}
                     fontSize={'14px'}
                     width={'342px'}
@@ -237,6 +238,7 @@ const Faq = () => {
                      fontWeight={'400'}
                      textDecoration={'underline'}
                      fontFamily='Inter'
+                     paddingBottom={'14px'}
                 > <a href="hi@careergrowth.com">hi@careergrowth.com</a></Text>
             </Box>
     </Box> 

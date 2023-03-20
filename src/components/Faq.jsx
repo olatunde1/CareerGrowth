@@ -9,7 +9,7 @@ import React from 'react'
 
 const Faq = () => {
   return (
-    <Box display={'flex'} flexDirection={{ base: 'column', md:'row' }} >
+    <Box display={'flex'} flexDirection={{ base: 'column', md:'row' }} margin={{base:'', md:'0 auto'}}>
             <Box marginRight={'42px'} >
                 <Text 
                     display={{base:'none', md:'block'}}

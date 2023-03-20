@@ -216,7 +216,7 @@ function Testimonials() {
         >
         {testimonialsArray.map((item, idx) => (
           <div
-          className="smallCard"
+            className="smallCard"
             key={idx}
             onClick={() => {
               // console.log(item)

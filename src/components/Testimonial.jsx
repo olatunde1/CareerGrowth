@@ -212,7 +212,7 @@ function Testimonials() {
         {/* testimonial list */}
       
       <Box
-        display={{base:'column', md:'flex'}} 
+        display={{base:'', md:'flex'}} 
         className="flex"
         marginTop={'60px'}
        
@@ -236,7 +236,7 @@ function Testimonials() {
                 className="userName"
                 fontFamily={'Epilogue'}
                 fontWeight={'500'}
-                fontSize={'18px'}
+                fontSize={{base:'14px', md:'18px'}} 
                 lineHeight={'140%'}
               >{item.name}</Text>
               <Text

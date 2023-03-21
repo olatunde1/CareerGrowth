@@ -1,7 +1,7 @@
 import React from "react"
 import { Box, Image,Text,Button,Container } from '@chakra-ui/react'
 import join from './images/Image.png'
-import join2 from './images/join2.png'
+import join2 from './images/mobileTestimonial.svg'
 import { Fade,Zoom} from 'react-awesome-reveal';
 const JoinOurCommunity = () => {
   return (

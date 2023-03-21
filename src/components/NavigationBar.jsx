@@ -21,7 +21,7 @@ import {
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 // import { MoonIcon, SunIcon } from '@chakra-ui/icons';
-import logo from './images/logo.png'
+import logo from './images/logo.svg'
 
 
 

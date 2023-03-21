@@ -10,11 +10,11 @@ import {
   } from '@chakra-ui/react';
   import { Fade,Zoom} from 'react-awesome-reveal';
 
-  import Group1 from './images/Group1.png'
-  import Group2 from './images/Group2.png'
-  import Group3 from './images/Group3.png'
-  import GroupVector from './images/GroupVector.png'
-  import GroupVector2 from './images/GroupVector2.png'
+  import Group1 from './images/Group1.svg'
+  import Group2 from './images/Group2.svg'
+  import Group3 from './images/Group3.svg'
+  import GroupVector from './images/GroupVector.svg'
+  import GroupVector2 from './images/GroupVector2.svg'
   
   
   
@@ -70,8 +70,8 @@ import {
            
             <CardHeader>
           
-            <Fade left right duration={1000} delay={1000}>
-             <Image src={Group1} Width={'130px'} height={'100%'}/></Fade> </CardHeader>
+            <Zoom duration={300} delay={300}>
+             <Image src={Group1} Width={'130px'} height={'100%'}/></Zoom> </CardHeader>
              
             <Text
               fontFamily='Epilogue'
@@ -82,7 +82,7 @@ import {
               fontSize={'30px'}
               lineHeight={'31px'}
             >Sign Up</Text> 
-              <Zoom left cascade>
+              <Zoom >
             <Text
               fontFamily={'Satoshi'}
               textAlign={{base:'center', md:'start'}}
@@ -96,9 +96,9 @@ import {
           <Image src={GroupVector} paddingTop={'42px'} Width={'130px'} height={'100%'} display={{base:'none', md:'flex'}}/>
           <Card backgroundColor={'transparent'} paddingLeft={{base:'0px',md:'72px'}}  paddingRight={{base:'0px',md:'0px'}} border='none' variant={'unstyled'} align={{base:'center', md:'start'}} >
           <CardHeader> 
-            <Fade duration={1000} delay={1000}>
+            <Zoom duration={300} delay={300}>
               <Image src={Group2} Width={'130px'} height={'100%'} />  
-            </Fade>  </CardHeader>
+            </Zoom>  </CardHeader>
             <Zoom right cascade>
               <Text
                 fontFamily='Epilogue'

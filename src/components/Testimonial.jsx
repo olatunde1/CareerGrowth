@@ -50,7 +50,7 @@ function Testimonials() {
   const [testimonialBody, setTestimonialBody] = useState(testimonialsArray[0]);
 
   return (
-    <Box margin={'0 auto'} paddingBottom={'129px'}>
+    <Box margin={'0 auto'} paddingBottom={{base:'30px', md:'129px'}} >
       
         {/* active testimonial */}
         <Box>
@@ -182,7 +182,7 @@ function Testimonials() {
             
             <Text
               className="textBody"
-              // width={{base:'341.6px', md:'580.29px'}}
+              width={{base:'341.6px', md:'580.29px'}}
               display={{base:'none', md:'block'}}
               height={{base:'220px', md:'248px'}}
               fontSize={{base:'16px', md:'22px'}}
@@ -216,6 +216,9 @@ function Testimonials() {
         display={{base:'flex', md:'flex'}} 
         className="flex"
         marginTop={'60px'}
+        paddingLeft={'11px'}
+        width={{base:'379px', md:'0px'}}
+        overflow={'hidden'}
        
         >
         {testimonialsArray.map((item, idx) => (
@@ -230,20 +233,21 @@ function Testimonials() {
             <Image 
             src={item.passport}
             marginRight={{base:'0px',md:'20px'}}
-            width={'60.68'} height={'61.96'}  />
-            <Box>
+            width={'60.68'} height={'61.96'} paddingBottom={'21px'}  />
+            <Box width={{base:'250px', md:'250px'}} overflow={'hidden'} paddingLeft={{base:'12px', md:'0px'}}  >
               <Text
                 paddingTop={'6px'}
                 className="userName"
                 fontFamily={'Epilogue'}
                 fontWeight={'500'}
+                color={'#001630'}
                 fontSize={{base:'14px', md:'18px'}} 
                 lineHeight={'140%'}
               >{item.name}</Text>
               <Text
                 fontFamily={'Satoshi'}
                 fontWeight={'500'}
-                fontSize={'14px'}
+                fontSize={{base:'12px', md:'14px'}} 
                 lineHeight={'140%'}
               >{item.jobDesc}</Text>
             </Box>

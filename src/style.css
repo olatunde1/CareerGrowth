@@ -11,6 +11,10 @@ html{
     scroll-behavior: smooth;
 }
 
+.Container{
+    /* width: 1440px; */
+    /* margin: 0 auto; */
+}
 
 .flex{
     margin-top: 60px;

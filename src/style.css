@@ -24,7 +24,6 @@ html{
 }
 
 .smallCard{
-    
     display: flex;
     border-bottom: 2px dashed #0077FE;
     margin-right:2rem;
@@ -40,7 +39,7 @@ html{
 }
 
 .textBody{
-    animation: move 2s ease-in;
+    animation: move 2s ease-in !important;
 }
 
 .progress-bar {

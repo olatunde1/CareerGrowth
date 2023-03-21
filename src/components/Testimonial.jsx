@@ -24,7 +24,7 @@ function Testimonials() {
       name: "Shayla Nico",
       title: "Good CO",
       description:
-        "“With the help of their mentorship program and weekly sessions, I gained the skills and confidence I needed to succeed in interviews and land my dream job. Not only that, but the program also helped me negotiate a higher salary than I ever thought possible. I highly recommend the Career Growth community to anyone looking to take their tech career to the next level!.”",
+        "“I can't thank the Career Growth enough for the incredible impact it's had on my career. With the help of their mentorship program and weekly sessions, I gained the skills and confidence I needed to succeed in interviews and land my dream job. Not only that, but the program also helped me negotiate a higher salary than I ever thought possible. I highly recommend the Career Growth community to anyone looking to take their tech career to the next level!.”",
       image: image2,
       image2: testImage,
       passport: shayla,
@@ -193,7 +193,7 @@ function Testimonials() {
               paddingTop={'156px'}
               paddingBottom={'95.18px'}
               paddingLeft={'60px'}
-              animation={'ease-in-out'}
+              animation={'ease-in'}
 
             >{testimonialBody.description}</Text>
           </Box>
@@ -205,7 +205,6 @@ function Testimonials() {
             marginLeft={{base:'', md:'85px'}}
             objectFit={'fill'}
             display={{base:'none', md:'block'}}
-            
             />
           
           </Box>
@@ -218,7 +217,7 @@ function Testimonials() {
         marginTop={'60px'}
         paddingLeft={'11px'}
         width={{base:'379px', md:'0px'}}
-        overflow={'hidden'}
+        overflow={{base:'hidden', md:'visible'}}
        
         >
         {testimonialsArray.map((item, idx) => (

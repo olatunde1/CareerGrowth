@@ -180,7 +180,7 @@ function Testimonials() {
           <Box>
             
             <Text
-            className="textBody"
+              className="textBody"
               // width={{base:'341.6px', md:'580.29px'}}
               display={{base:'none', md:'block'}}
               height={{base:'220px', md:'248px'}}
@@ -192,6 +192,7 @@ function Testimonials() {
               paddingTop={'156px'}
               paddingBottom={'95.18px'}
               paddingLeft={'60px'}
+              animation={'ease-in-out'}
 
             >{testimonialBody.description}</Text>
           </Box>
@@ -214,7 +215,7 @@ function Testimonials() {
         display={{base:'column', md:'flex'}} 
         className="flex"
         marginTop={'60px'}
-        marginRight={'75px'}
+       
         >
         {testimonialsArray.map((item, idx) => (
           <div

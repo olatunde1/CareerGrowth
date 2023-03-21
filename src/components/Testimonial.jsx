@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Box,Image,Text,Heading,useBreakpointValue } from "@chakra-ui/react";
-import image1 from './images/testimonial.png'
-import testImage from './images/testimonial2.png'
+import image1 from './images/testimonial.svg'
+import image2 from './images/ishaya2.jpeg'
+import testImage from './images/testimonial2.svg'
 import adebiyi from './images/adebiyi.png'
 import shayla from './images/shayla.png'
 
@@ -13,7 +14,7 @@ function Testimonials() {
       title: "Good COmpany",
       description:
         "“I can't thank the Career Growth enough for the incredible impact it's had on my career. With the help of their mentorship program and weekly sessions, I gained the skills and confidence I needed to succeed in interviews and land my dream job. Not only that, but the program also helped me negotiate a higher salary than I ever thought possible. I highly recommend the Career Growth community to anyone looking to take their tech career to the next level!.”",
-      image: image1,
+      image: testImage,
       image2: testImage,
       passport: adebiyi,
       jobDesc: "Full-stack developer, Stealth®"
@@ -24,7 +25,7 @@ function Testimonials() {
       title: "Good CO",
       description:
         "“With the help of their mentorship program and weekly sessions, I gained the skills and confidence I needed to succeed in interviews and land my dream job. Not only that, but the program also helped me negotiate a higher salary than I ever thought possible. I highly recommend the Career Growth community to anyone looking to take their tech career to the next level!.”",
-      image: image1,
+      image: image2,
       image2: testImage,
       passport: shayla,
       jobDesc: "Data Analyst, Luta®"
@@ -152,7 +153,7 @@ function Testimonials() {
               </Text>{' '}{' '}
             </Heading>
           <Image 
-            src={ testimonialBody.image2}
+            src={ testimonialBody.image}
             height={{base:'253.9px', md:'500px'}}
             width={{base:'244.95px', md:'100%'}}
             marginLeft={{base:'82.03px', md:'85px'}}
@@ -212,7 +213,7 @@ function Testimonials() {
         {/* testimonial list */}
       
       <Box
-        display={{base:'', md:'flex'}} 
+        display={{base:'flex', md:'flex'}} 
         className="flex"
         marginTop={'60px'}
        
@@ -228,7 +229,7 @@ function Testimonials() {
           >
             <Image 
             src={item.passport}
-            marginRight={'20px'}
+            marginRight={{base:'0px',md:'20px'}}
             width={'60.68'} height={'61.96'}  />
             <Box>
               <Text

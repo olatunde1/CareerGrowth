@@ -112,7 +112,7 @@ import {
                 
             </GridItem>
             <GridItem w='100%'h={{base:'', md:'116.85px'}}  >
-            <Zoom right cascade>
+            <Zoom cascade>
               <Image src={job} width={{base:'64px', md:'104px'}} marginLeft={{base:'17.31px', md:'0px'}}/>
                 <Text 
                     paddingTop={'16px'}
@@ -126,7 +126,7 @@ import {
                 
             </GridItem>
             <GridItem w='100%' h={{base:'', md:'116.85px'}}  >
-            <Zoom left cascade>
+            <Zoom cascade>
             <Image src={mentorship} width={{base:'64px', md:'104px'}} marginLeft={{base:'17.31px', md:'0px'}}/>
                 <Text
                     paddingTop={'16px'}

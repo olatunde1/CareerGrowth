@@ -20,12 +20,12 @@ html{
 }
 
 .smallCard{
-    width: 305px;
+    
     display: flex;
     border-bottom: 2px dashed #0077FE;
     margin-right:2rem;
-    padding:8px 8px;
-    margin: 8px;
+    object-fit: cover;
+    
 }
 
 @keyframes move{
@@ -52,7 +52,16 @@ html{
 
  .active .userName{
     color: #0077FE;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /* width: 307px; */
+    /* margin-right:2rem; */
  }
  .inActive{
     color: gray;
+    opacity: 0.4;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
  }

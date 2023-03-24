@@ -8,7 +8,7 @@ import {
     Button,
     Card, CardHeader, SimpleGrid
   } from '@chakra-ui/react';
-  import { Fade,Zoom} from 'react-awesome-reveal';
+  import { Fade,Slide,Zoom} from 'react-awesome-reveal';
 
   import Group1 from './images/Group1.svg'
   import Group2 from './images/Group2.svg'
@@ -59,7 +59,7 @@ import {
                 color={'#ffffff'}
                 colorScheme={'#0077FE'}
                 bg={'#0077FE'}
-                _hover={{ bg: '#0077FE', color: '#ffff' }}>
+                _hover={{ bg: '#0d72e5', color: '#ffff' }}>
               Join Now
             </Button>
           </Stack>
@@ -70,9 +70,10 @@ import {
            
             <CardHeader>
           
-            <Zoom duration={300} delay={300}>
-             <Image src={Group1} Width={'130px'} height={'100%'}/></Zoom> </CardHeader>
-             
+           
+             <Image src={Group1} Width={'130px'} height={'100%'}/></CardHeader>
+
+             <Slide direction='up'> 
             <Text
               fontFamily='Epilogue'
               fontWeight={'600'}
@@ -82,7 +83,7 @@ import {
               fontSize={'30px'}
               lineHeight={'31px'}
             >Sign Up</Text> 
-              <Zoom >
+            
             <Text
               fontFamily={'Satoshi'}
               textAlign={{base:'center', md:'start'}}
@@ -90,16 +91,16 @@ import {
               fontWeight={'400'}
               width={{base:'303px', md:'240px'}}
               lineHeight={'150%'}
-            >Sign up for the Career Growth subscription program.</Text></Zoom>
+            >Sign up for the Career Growth subscription program.</Text></Slide>
 
           </Card>   
           <Image src={GroupVector} paddingTop={'42px'} Width={'130px'} height={'100%'} display={{base:'none', md:'flex'}}/>
           <Card backgroundColor={'transparent'} paddingLeft={{base:'0px',md:'72px'}}  paddingRight={{base:'0px',md:'0px'}} border='none' variant={'unstyled'} align={{base:'center', md:'start'}} >
           <CardHeader> 
-            <Zoom duration={300} delay={300}>
+            
               <Image src={Group2} Width={'130px'} height={'100%'} />  
-            </Zoom>  </CardHeader>
-            <Zoom right cascade>
+            </CardHeader>
+            <Slide direction='up'>
               <Text
                 fontFamily='Epilogue'
                 fontWeight={'600'}
@@ -116,13 +117,13 @@ import {
                 fontWeight={'400'}
                 width={{base:'303px', md:'240px'}}
                 lineHeight={'150%'}
-              >Gain access to practical skills training, career guidance, mentorship, and a supportive community of like-minded individuals.</Text></Zoom>
+              >Gain access to practical skills training, career guidance, mentorship, and a supportive community of like-minded individuals.</Text></Slide>
       
           </Card>
           <Image src={GroupVector2} paddingTop={'42px'} Width={'130px'} height={'100%'} display={{base:'none', md:'flex'}}/>
           <Card backgroundColor={'transparent'}  paddingLeft={{base:'opx',md:'63px'}} border='none' variant={'unstyled'} align={{base:'center', md:'start'}} >
           <CardHeader> <Image src={Group3}  Width={'130px'} height={'100%'} /></CardHeader>
-          <Zoom down cascade>
+          <Slide direction='up'>
               <Text
                 fontFamily='Epilogue'
                 fontWeight={'600'}
@@ -139,7 +140,7 @@ import {
                 fontWeight={'400'}
                 lineHeight={'150%'}
                 width={{base:'303px', md:'240px'}}
-              >Fast-track your career in tech and land your dream job.</Text></Zoom>
+              >Fast-track your career in tech and land your dream job.</Text></Slide>
           </Card>
         </Stack>
       </Box>

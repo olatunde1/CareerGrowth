@@ -10,6 +10,7 @@ import {
   import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
   import {faArrowUpRightDots} from '@fortawesome/free-solid-svg-icons'
   import { Fade,Zoom} from 'react-awesome-reveal';
+  import 'animate.css';
   
   export default function CallToActionWithIllustration() {
     return (
@@ -25,8 +26,9 @@ import {
           spacing={{ base: 8, md: 10 }}
           py={{ base: '48px', md: 32 }}
           >
-          <Zoom cascade  >
+          
             <Heading
+            className='animate__animated animate__bounceIn'
               width={{base:'360.56px',sm:'360.56px', md:'1074px'}}
               fontWeight={{base:'500', md:'700'}}
               fontFamily='Epilogue'
@@ -40,7 +42,7 @@ import {
               10x your income.
               </Text>
             </Heading>
-          </Zoom>
+          
           <Fade top>
           <Text
           paddingLeft={'16.54px'}
@@ -67,10 +69,10 @@ import {
                 px={{base:'48px', md:'88px'}}
                 fontSize={'16px'}
                 fontWeight={'600'}
-                color={'#0077FE'}
+                color={'#ffffff'}
                 colorScheme={'#0077FE'}
-                bg={'#EEF6FF'}
-                _hover={{ bg: '#0077FE', color: '#ffff' }}>
+                bg={'#0077FE'}
+                _hover={{ bg: '#0d72e5', color: '#ffff' }}>
               Join Now
             </Button>
             <Button 

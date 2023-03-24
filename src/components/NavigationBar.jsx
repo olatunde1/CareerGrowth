@@ -2,11 +2,8 @@ import {
   Box,
   Flex,
   Image,
-  IconButton,
   Button,
   Stack,
-  Collapse,
-  Container,
   useColorModeValue,
   useDisclosure,
   useColorMode,
@@ -31,7 +28,7 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-      <Box maxWidth={'100%'}>
+      <Box maxWidth={'100vw'}>
         <Flex
         // bgColor={{base:'#EEF6FF', md:'gray'}}
           // bg={useColorModeValue('white', 'gray.800')}
@@ -50,6 +47,8 @@ export default function WithSubnavigation() {
           direction={'row'}
           >
               <Button
+              
+              className='btn'
                   fontFamily='Inter'
                   display={{base:'none', md:'flex'}}
                   px={ '32px'}
@@ -67,9 +66,9 @@ export default function WithSubnavigation() {
                   fontSize={'14px'}
                   fontWeight={'600'}
                   border={'1px solid #E6E6E6 '}
-                  // color={'#0077FE'}
-                  bg={'#ffffff'}
-                  _hover={{ bg: '#0077FE', color: '#ffff' }}>
+                  color={'#ffffff'}
+                  bg={'#0077FE'}
+                  _hover={{ bg: '#0d72e5', color: '#ffff' }}>
                 Join Now &nbsp;&nbsp;&nbsp;&nbsp; <FontAwesomeIcon className='icon' icon={faArrowRight} />
               </Button>
             </Stack>

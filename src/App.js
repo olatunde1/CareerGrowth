@@ -3,7 +3,6 @@ import {
   ChakraProvider,
   Box,
   Grid,
-  theme,
 } from '@chakra-ui/react';
 // import { ColorModeSwitcher } from './ColorModeSwitcher';
 import NavigationBar from './components/NavigationBar'
@@ -13,6 +12,7 @@ import Member from './components/Member'
 import Testimonial from './components/Testimonial.jsx'
 import JoinOurCommunity from './components/JoinOurCommunity'
 import Faq from './components/Faq';
+import theme from './components/theme'
 import { motion, useScroll } from "framer-motion";
 
 import './style.css'

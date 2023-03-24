@@ -23,15 +23,16 @@ import {
       <Container maxW={'container'}>
         <Stack minH={'100vh'} margin={''} width={{base:'375px', md:'full'}}  direction={{ base: 'column', md: 'row' }} paddingLeft={{base:'2px', md:'160px'}}>
          <Flex flex={1}>
-          <Zoom>
+          
           <Image
+          className='animate__animated animate__bounceIn'
             alt={'Join Image'}
             objectFit={'contain'}
             width={'100%'}
             height={'440px'}
             src={join}
           />
-          </Zoom>
+         
          
         </Flex>
         <Flex paddingLeft={{md:'96px'}} flex={1}  textAlign={'justify'} >

@@ -14,20 +14,20 @@ import {
   export default function CallToActionWithIllustration() {
     return (
       <Box
-      
+        maxWidth={'90rem'}
         margin={'0 auto'}
         // textAlign={'center'}
       >
         <Stack
           width={{ md:'5xl'}}
           textAlign={'center'}
-          align={{base:'start', md:'center'}}
+          align={{sm:'start', base:'start', md:'center'}}
           spacing={{ base: 8, md: 10 }}
           py={{ base: '48px', md: 32 }}
           >
           <Zoom cascade  >
             <Heading
-              width={{base:'360.56px', md:'1074px'}}
+              width={{base:'360.56px',sm:'360.56px', md:'1074px'}}
               fontWeight={{base:'500', md:'700'}}
               fontFamily='Epilogue'
               fontSize={{ base: '38px', md: '84px' }}

@@ -2,7 +2,7 @@
 
 Body{
     --blue: #0077FE;
-    max-width: 100%;
+    max-width: 100% !important;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -11,10 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 
-.Container{
-    /* width: 1440px; */
-    /* margin: 0 auto; */
-}
+
 
 .flex{
     margin-top: 60px;
@@ -25,8 +22,8 @@ html{
 
 .smallCard{
     display: flex;
-    border-bottom: 2px dashed #0077FE;
-    margin-right:2rem;
+    /* border-bottom: 2px dashed #0077FE; */
+    margin-right:1rem;
     object-fit: cover;
     
 }

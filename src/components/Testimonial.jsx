@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Box,Image,Text,Heading,useBreakpointValue } from "@chakra-ui/react";
-import image1 from './images/testimonial.svg'
 import image2 from './images/ishaya2.jpeg'
 import testImage from './images/testimonial2.svg'
 import adebiyi from './images/adebiyi.png'
@@ -55,7 +54,7 @@ function Testimonials() {
         {/* active testimonial */}
         <Box>
         <Text
-        display={{base:'none', md:'block'}}
+            display={{base:'none', md:'block'}}
             color={'#01E7FF'}
             fontSize={'14px'}
             letterSpacing={'1.25px'}
@@ -216,7 +215,7 @@ function Testimonials() {
         className="flex"
         marginTop={'60px'}
         paddingLeft={'11px'}
-        width={{base:'379px', md:'0px'}}
+        width={{base:'379px', md:'null'}}
         overflow={{base:'hidden', md:'visible'}}
        
         >

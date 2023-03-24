@@ -10,7 +10,7 @@ import {
   useColorModeValue,
   useDisclosure,
   useColorMode,
-  extendTheme,
+
 } from '@chakra-ui/react';
 // import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
   
@@ -24,8 +24,6 @@ import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import logo from './images/logo.svg'
 
 
-
-
 export default function WithSubnavigation() {
   
   const { colorMode, toggleColorMode } = useColorMode();
@@ -33,7 +31,7 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-      <Box>
+      <Box maxWidth={'100%'}>
         <Flex
         // bgColor={{base:'#EEF6FF', md:'gray'}}
           // bg={useColorModeValue('white', 'gray.800')}
@@ -42,11 +40,11 @@ export default function WithSubnavigation() {
           px={{ base: 1 }}
           marginRight={{base:'0px', md:'158px'}}
         >          
-          <Flex flex={{ base: 'center',md:'1' }} justify={{ base: 'center', md: 'start' }}>
+          <Stack flex={{ base: 'center',md:'1' }} justify={{ base: 'center',sm:'center', md: 'start' }}>
           <Box marginLeft={'80px'}>
               <Image src={logo} />
             </Box>
-          </Flex>
+          </Stack>
 
           <Stack spacing={6}
           direction={'row'}

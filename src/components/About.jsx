@@ -10,7 +10,7 @@ import {
   } from '@chakra-ui/react';
 
   import { Fade,Zoom} from 'react-awesome-reveal';
-  import join from './images/join.svg'
+  import join from './images/2.png'
   import career from './images/career.png'
   import job from './images/job.png'
   import mentorship from './images/mentorship.png'

@@ -4,7 +4,6 @@ import {
   Box,
   Grid,
   theme,
-  extendTheme
 } from '@chakra-ui/react';
 // import { ColorModeSwitcher } from './ColorModeSwitcher';
 import NavigationBar from './components/NavigationBar'
@@ -19,19 +18,7 @@ import { motion, useScroll } from "framer-motion";
 import './style.css'
 
 
-
-const breakpoints = {
-  sm: '320px',
-  md: '768px',
-  lg: '960px',
-  xl: '1200px',
-  '2xl': '1536px',
-}
-
-
-
 function App() {
-  const theme = extendTheme({ breakpoints })
   const { scrollYProgress } = useScroll();
   return (
     <ChakraProvider theme={theme}>

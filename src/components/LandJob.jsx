@@ -1,5 +1,4 @@
 import {
-    Container,
     Heading,
     Stack,
     Text,
@@ -9,20 +8,29 @@ import {
   } from '@chakra-ui/react';
   import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
   import {faArrowUpRightDots} from '@fortawesome/free-solid-svg-icons'
-  import { Fade,Zoom} from 'react-awesome-reveal';
+  import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
   import 'animate.css';
   
+
+
+  const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
+  const FadeUp = batch(Fade(), Move(), Sticky())
+
   export default function CallToActionWithIllustration() {
+   ;
     return (
-      <Box
-        maxWidth={'90rem'}
+      <ScrollContainer>
+        <ScrollPage>
+        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
+        <Box
+        maxWidth={'1440px'}
         margin={'0 auto'}
         // textAlign={'center'}
       >
         <Stack
-          width={{ md:'5xl'}}
+          // width={'100vw'}
           textAlign={'center'}
-          align={{sm:'start', base:'start', md:'center'}}
+          align={{sm:'center', base:'center', md:'center'}}
           spacing={{ base: 8, md: 10 }}
           py={{ base: '48px', md: 32 }}
           >
@@ -43,7 +51,7 @@ import {
               </Text>
             </Heading>
           
-          <Fade top>
+        
           <Text
           paddingLeft={'16.54px'}
           paddingRight={'16.54px'}
@@ -61,7 +69,7 @@ import {
           color={'#001F42'}>
           Get the skills and support you need to land your dream job in tech and multiply your income with our Career Accelerator.
           </Text>
-          </Fade>
+        
           
           <Stack spacing={6} direction={'row'}>
             <Button
@@ -88,6 +96,10 @@ import {
           </Stack>
         </Stack>
       </Box>
+        </Animator>
+        </ScrollPage>
+      </ScrollContainer>
+      
     );
   }
   

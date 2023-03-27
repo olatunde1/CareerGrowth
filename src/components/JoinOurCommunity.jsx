@@ -2,33 +2,32 @@ import React from "react"
 import { Box, Image,Text,Button,Container } from '@chakra-ui/react'
 import join from './images/Image.png'
 import join2 from './images/mobileTestimonial.svg'
-import { Fade,Zoom} from 'react-awesome-reveal';
 const JoinOurCommunity = () => {
   return (
     // <Container maxW={'container'}>
         <Box
           className="join"
-          width={{base:'', md:''}}
+          width={{base:'', md:'100%'}}
           height={{base:'', md:'509px'}}
           display={'flex'}
           backgroundColor={'#001630'}
           color={'#ffffff'}
           flexDirection={{ base: 'column', md:'row' }}
           overflow='hidden'
-          variant='outline'
+          variant='outline' >
 
-    >
       <Box
+        width={{ base: '360.86px', md: '740px'}}
         fontSize={{ base: '3xl', md: '48px', lg: '48px' }}
         lineHeight={'60px'}
       >
-        <Box>
-          <Fade left cascade>
+
+          
               <Text
                
-                margin={'0 auto'}
-                width={{ base: '360.86px', md: '740px'}}
-                paddingLeft={{ base: '22px', md: '160px'}}
+                // margin={'0 auto'}
+                width={{ base: '360.86px', md: '680px'}}
+                paddingLeft={{ base: '39px', md: '120px'}}
                 fontFamily='Epilogue'
                 fontStyle={'normal'}
                 fontWeight={'600'}
@@ -39,27 +38,29 @@ const JoinOurCommunity = () => {
                 Join our community today to<Text color={'#0077FE'} as={'span'}>
                       {' '} fast-track</Text>{' '}your<Text color={'#0077FE'} as={'span'}  > tech  career
               </Text>
-              </Text></Fade>
-              <Fade right cascade>
+              </Text>
+             
                 <Button
                   marginTop={'18px'}
                   fontFamily='Epilogue'
                   variant='solid'
                   colorScheme='blue'
-                  marginLeft={{ base: '78px', md: '160px'}}
+                  marginLeft={{ base: '70px', md: '120px'}}
                   color={'#ffffff'}
                   px={'92px'}
                   backgroundColor={'#01E7FF'}
                   _hover={{ bg: '#01E7FF', color: '#ffff' }}>
                   Join Now
                 </Button>
-              </Fade>
-              
-        </Box>
+            
+   
 
       </Box>
+
+
+      {/* Mobile view for Join Our community section */}
       <Box 
-        marginLeft={{ base: '0px', md: '150.14px' }}  borderRadius={'24px'}
+        marginLeft={{ base: 'null', md: '150.14px' }}  borderRadius={'24px'}
         display={{base:'block', md:'none'}}
         // marginRight={'115.19px'}
       >
@@ -72,12 +73,14 @@ const JoinOurCommunity = () => {
             alt='Caffe Latte'
           />
       </Box>
+
+      {/* Desktop view for Join Our community section  */}
       <Box 
         marginLeft={{ base: '28.28px', md: '150.14px' }}  borderRadius={'24px'}
         display={{base:'none', md:'block'}}
         // marginRight={'115.19px'}
       >
-        <Fade bottom big cascade >
+    
         <Image
        
             objectFit='contain'
@@ -85,10 +88,10 @@ const JoinOurCommunity = () => {
             height={{ base: '421px', md: '577.4px' }}
             src={join}
             alt='Caffe Latte'
-          /></Fade>
+          />
       </Box>
 
-    </Box>
+        </Box>
     // </Container>
   )
 }

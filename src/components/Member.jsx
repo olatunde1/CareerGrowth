@@ -20,7 +20,7 @@ import {
   
   export default function CallToActionWithIllustration() {
     return (
-      <Box paddingBottom={'100.5px'} backgroundColor={'#F6F7F9'} >
+      <Box maxWidth={'100%'} paddingBottom={'100.5px'} backgroundColor={'#F6F7F9'} >
         <Stack
           textAlign={'center'}
           align={{base:'center', md:'center'}}
@@ -64,7 +64,7 @@ import {
             </Button>
           </Stack>
         </Stack>
-        <Stack direction={{ base: 'column', md:'row' }} width={{base:'375px', md:'1400px'}} margin={'0 auto'} paddingLeft={{base:'0px', md:'164px'}} >
+        <Stack direction={{ base: 'column', md:'row' }} width={{base:'375px', md:'1400px'}} margin={'0 auto'} paddingLeft={{base:'0px', md:'134px'}} >
          
           <Card backgroundColor={'transparent'} paddingRight={{base:'0px',md:''}} border='none' variant={'unstyled'} align={{base:'center', md:'start'}} >
            
@@ -73,7 +73,6 @@ import {
            
              <Image src={Group1} Width={'130px'} height={'100%'}/></CardHeader>
 
-             <Slide direction='up'> 
             <Text
               fontFamily='Epilogue'
               fontWeight={'600'}
@@ -91,7 +90,7 @@ import {
               fontWeight={'400'}
               width={{base:'303px', md:'240px'}}
               lineHeight={'150%'}
-            >Sign up for the Career Growth subscription program.</Text></Slide>
+            >Sign up for the Career Growth subscription program.</Text>
 
           </Card>   
           <Image src={GroupVector} paddingTop={'42px'} Width={'130px'} height={'100%'} display={{base:'none', md:'flex'}}/>
@@ -100,7 +99,7 @@ import {
             
               <Image src={Group2} Width={'130px'} height={'100%'} />  
             </CardHeader>
-            <Slide direction='up'>
+            
               <Text
                 fontFamily='Epilogue'
                 fontWeight={'600'}
@@ -117,13 +116,13 @@ import {
                 fontWeight={'400'}
                 width={{base:'303px', md:'240px'}}
                 lineHeight={'150%'}
-              >Gain access to practical skills training, career guidance, mentorship, and a supportive community of like-minded individuals.</Text></Slide>
+              >Gain access to practical skills training, career guidance, mentorship, and a supportive community of like-minded individuals.</Text>
       
           </Card>
           <Image src={GroupVector2} paddingTop={'42px'} Width={'130px'} height={'100%'} display={{base:'none', md:'flex'}}/>
           <Card backgroundColor={'transparent'}  paddingLeft={{base:'opx',md:'63px'}} border='none' variant={'unstyled'} align={{base:'center', md:'start'}} >
           <CardHeader> <Image src={Group3}  Width={'130px'} height={'100%'} /></CardHeader>
-          <Slide direction='up'>
+         
               <Text
                 fontFamily='Epilogue'
                 fontWeight={'600'}
@@ -140,7 +139,7 @@ import {
                 fontWeight={'400'}
                 lineHeight={'150%'}
                 width={{base:'303px', md:'240px'}}
-              >Fast-track your career in tech and land your dream job.</Text></Slide>
+              >Fast-track your career in tech and land your dream job.</Text>
           </Card>
         </Stack>
       </Box>

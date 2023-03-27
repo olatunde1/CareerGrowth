@@ -4,6 +4,7 @@ import {
   Image,
   Button,
   Stack,
+  Container,
   useColorModeValue,
   useDisclosure,
   useColorMode,
@@ -28,17 +29,16 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-      <Box maxWidth={'100vw'}>
+ 
+      <Box>
         <Flex
-        // bgColor={{base:'#EEF6FF', md:'gray'}}
-          // bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
           py={{ base: 8, md: 8 }}
           px={{ base: 1 }}
-          marginRight={{base:'0px', md:'158px'}}
+          marginRight={{base:'0px', md:'58px', lg:'158px'}}
         >          
-          <Stack flex={{ base: 'center',md:'1' }} justify={{ base: 'center',sm:'center', md: 'start' }}>
-          <Box marginLeft={'80px'}>
+          <Stack flex={{ base: 'center',md:'1' }} justify={{ base: 'center',md:'center', lg: 'start' }}>
+          <Box marginLeft={{base:'50px',sm:'54px', md:'58px', lg:'158px'}}>
               <Image src={logo} />
             </Box>
           </Stack>
@@ -61,6 +61,8 @@ export default function WithSubnavigation() {
               </Button>
               <Button 
                 //  px={'88px'}
+               
+                
                   display={{base:'none', md:'flex'}}
                   fontFamily='Inter'
                   fontSize={'14px'}
@@ -73,7 +75,9 @@ export default function WithSubnavigation() {
               </Button>
             </Stack>
         </Flex>
-    </Box>
+      </Box>
+  
+  
   
     
   );

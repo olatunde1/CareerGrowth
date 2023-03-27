@@ -9,10 +9,10 @@ import React from 'react'
 
 const Faq = () => {
   return (
-    <Box display={'flex'} flexDirection={{ base: 'column', md:'row' }} margin={{base:'', md:'0 auto'}}>
+    <Box  display={'flex'} flexDirection={{ base: 'column', md:'row' }} marginLeft={{base:'null', md:'130px'}}>
             <Box marginRight={'42px'} >
                 <Text 
-                    display={{base:'none', md:'block'}}
+                     display={{base:'none', md:'block'}}
                      paddingTop={'120px'}
                      paddingBottom={'16px'}
                      color={'#01E7FF'}
@@ -20,7 +20,7 @@ const Faq = () => {
                      fontFamily='Epilogue'
                 >FAQ’S</Text>
                 <Heading
-                    width={'290px'}
+                    // width={{md:'190px', lg:'620px'}}
                     display={{base:'block', md:'none'}}
                     paddingTop={{ base: '44px', md: '0px' }}
                     fontSize={{ base: '24px', md: '48px' }}
@@ -76,7 +76,7 @@ const Faq = () => {
             </Box>
             <Box
                
-                width={{base:'410px', md:'640px'}}
+                width={{base:'410px', md:'580px'}}
                 paddingTop={{base:'15.5px', md:'130px'}}
             >
             <Accordion allowToggle>

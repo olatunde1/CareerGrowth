@@ -6,23 +6,24 @@ import {
     Stack,
     Text,
     useBreakpointValue,
-    Grid, GridItem, Container
+    Grid, GridItem
   } from '@chakra-ui/react';
 
-  import { Fade,Slide,Zoom} from 'react-awesome-reveal';
   import join from './images/2.png'
   import career from './images/career.png'
   import job from './images/job.png'
   import mentorship from './images/mentorship.png'
   import supportive from './images/supportive.png'
 
-  
+
   export default function SplitScreen() {
+    
 
     return (
-      <Container maxW={'container'}>
-        <Stack minH={'100vh'} margin={''} width={{base:'375px', md:'full'}}  direction={{ base: 'column', md: 'row' }} paddingLeft={{base:'2px', md:'160px'}}>
-         <Flex flex={1}>
+     
+      <Box maxWidth={'100%'}>
+        <Stack paddingBottom={{base:'44px', md:'98px'}} width={{base:'405px', md:'1440px'}}  direction={{ base: 'column', md: 'row' }} paddingLeft={{base:'5px',lg:'159.21px'}} paddingRight={{base:'null', lg:'19.21px'}}>
+        <Flex flex={1}>
           
           <Image
           className='animate__animated animate__bounceIn'
@@ -32,19 +33,19 @@ import {
             height={'440px'}
             src={join}
           />
-         
-         
+        
+        
         </Flex>
-        <Flex paddingLeft={{md:'96px'}} flex={1}  textAlign={'justify'} >
+        <Flex paddingLeft={{lg:'96px'}} flex={1} width={'480px'} textAlign={'justify'} >
           <Stack spacing={6} w={'full'} maxW={'lg'}>
-            <Fade left>
+          
               <Text color={'#01E7FF'}
               fontSize={'14px'}
               textAlign={{base:'center', md:'left'}}
               fontWeight={'500'}
               fontFamily='Epilogue'>
                   ABOUT</Text>
-            </Fade>
+        
           
 
             <Heading fontSize={{ base: '28px', md: '48px', lg: '48px' }}
@@ -70,9 +71,9 @@ import {
                   
                   // left: 0,
                 }}>
-               Why you should 
+              Why you should 
               </Text>
-         
+        
               <Text color={'#0077FE'} as={'span'}>
               {' '} join
               </Text>{' '}{' '}
@@ -80,7 +81,7 @@ import {
               our community
               </Text>{' '}
             </Heading>
-            <Slide direction='right'>
+          
             <Grid templateColumns='repeat(2, 1fr)' paddingTop={'35.15px'} gap={4} >
             <GridItem w={{ md:'100%'}} h={{base:'', md:'116.85px'}}  >
 
@@ -97,7 +98,7 @@ import {
                 
             </GridItem>
             <GridItem w='100%' h={{base:'', md:'116.85px'}}  >
-           
+          
                 <Image src={supportive} width={{base:'64px', md:'104px'}} marginLeft={{base:'17.31px', md:'0px'}}/>
                 <Text
                 paddingTop={'16px'}
@@ -111,7 +112,7 @@ import {
                 
             </GridItem>
             <GridItem w='100%'h={{base:'', md:'116.85px'}}  >
-           
+          
               <Image src={job} width={{base:'64px', md:'104px'}} marginLeft={{base:'17.31px', md:'0px'}}/>
                 <Text 
                     paddingTop={'16px'}
@@ -135,17 +136,19 @@ import {
                     fontWeight={'500'}
                     lineHeight={'28px'}
                     letterSpacing={'-0.18px'}>Mentorship</Text>
-           
+          
                 
             </GridItem>
             </Grid>
-            </Slide>
+      
             
           </Stack>
         </Flex>
-       
-      </Stack>
-      </Container>
       
+        </Stack>
+      </Box>
+  
     );
   }
+
+  

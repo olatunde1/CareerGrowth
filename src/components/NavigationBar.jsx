@@ -29,15 +29,16 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
+    <Container maxW='container.xl'>
     <Box>
-        <Container maxW='container.xl'>
+        
         <Flex
           color={useColorModeValue('gray.600', 'white')}
           py={{ base: 8, md: 8 }}
           px={{ base: 1 }}
-          marginRight={{base:'0px'}}
+          // marginRight={{base:'0px'}}
         >          
-          <Stack flex={{ base: 'center',md:'1' }} margin={{base:'0 auto'}}>
+          <Stack flex={{ base: 'center',md:'1' }} margin={{base:'0 auto'}} width={'200.16px'} height='76px' >
             <Box>
               <Image src={logo} />
             </Box>
@@ -74,10 +75,10 @@ export default function WithSubnavigation() {
               </Button>
             </Stack>
         </Flex>
-        </Container>
+        
     </Box>
   
-  
+    </Container>
   
     
   );

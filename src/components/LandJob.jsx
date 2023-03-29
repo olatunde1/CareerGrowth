@@ -22,7 +22,7 @@ import {
           textAlign={'center'}
           align={{sm:'center', base:'center', md:'center'}}
           spacing={{ base: 8, md: 10 }}
-          py={{ base: '48px', md: 32 }}
+          py={{ base: '4px', md: 32 }}
           >
           
             <Heading

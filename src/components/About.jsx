@@ -1,3 +1,4 @@
+import React, {useEffect} from 'react';
 import {
     Box,
     Flex,
@@ -15,10 +16,18 @@ import {
   import job from './images/job.png'
   import mentorship from './images/mentorship.png'
   import supportive from './images/supportive.png'
+  import AOS from 'aos';
+  import 'aos/dist/aos.css';
 
 
   export default function SplitScreen() {
-    
+    useEffect(()=> {
+      AOS.init({
+        duration:2000,
+        once:true
+      
+      });
+    }, [])
 
     return (
      
@@ -28,7 +37,9 @@ import {
         <Flex flex={1}>
           
           <Image
-          className='animate__animated animate__bounceIn'
+             data-aos="zoom-out"
+             
+          // className='animate__animated animate__bounceIn'
             alt={'Join Image'}
             objectFit={'contain'}
             width='100%'
@@ -37,7 +48,9 @@ import {
           />
         </Flex>
         <Flex paddingLeft={{lg:'96px'}} flex={1} width={'480px'} textAlign={'justify'} >
-          <Stack spacing={6} w={'full'} maxW={'lg'}>
+          <Stack spacing={6} w={'full'} maxW={'lg'}
+            data-aos="zoom-in-left"
+          >
           
               <Text color={'#01E7FF'}
               fontSize={'14px'}

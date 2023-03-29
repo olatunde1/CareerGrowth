@@ -4,7 +4,8 @@ import image2 from './images/shayla.jpg'
 import testImage from './images/testimonial.jpg'
 import adebiyi from './images/adebiyi.png'
 import shayla from './images/shayla.png'
-import shola from './images/Frame1.png'
+import shola from './images/sholaImage.jpg'
+import sholaPassport from './images/sholaPassport.jpg'
 
 
 function Testimonials() {
@@ -39,7 +40,7 @@ function Testimonials() {
         "“I'm grateful to be a part of the Career Growth community. I have gained enough experiences as a Junior software developer that has given me better chances at getting a job, and would highly recommend it to anyone looking to advance their career.”",
       image: shola,
       image2: testImage,
-      passport: shola,
+      passport: sholaPassport,
       jobDesc: "Devops, Luta®"
     },
     // {
@@ -52,7 +53,7 @@ function Testimonials() {
     // },
   ];
   const [testimonialBody, setTestimonialBody] = useState(testimonialsArray[0]);
-
+  
   return (
    <Box align='center' backgroundColor={{base:'#EBEBF4', md:'#ffffff'}}>
    

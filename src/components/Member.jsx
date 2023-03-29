@@ -1,3 +1,4 @@
+import React, {useEffect} from 'react';
 import {
     Container,
     Heading,
@@ -13,10 +14,19 @@ import {
   import Group3 from './images/Group3.svg'
   import GroupVector from './images/GroupVector.svg'
   import GroupVector2 from './images/GroupVector2.svg'
-  
+  import AOS from 'aos';
+  import 'aos/dist/aos.css';
   
   
   export default function CallToActionWithIllustration() {
+    useEffect(()=> {
+      AOS.init({
+        duration:1000,
+        once:true
+      
+      });
+    }, [])
+
     return (
      
       <Box backgroundColor={'#F6F7F9'}>
@@ -34,7 +44,9 @@ import {
               paddingBottom={{base:'4px', md:'24px'}}
               fontFamily='Epilogue'
               fontSize={{ base: '28px', sm: '4xl', md: '3rem' }}
-              lineHeight={{base:'29px', md:'24px'}}>
+              lineHeight={{base:'29px', md:'24px'}}
+              
+              >
               How to become a member ?
             </Heading>
             <Text
@@ -68,7 +80,10 @@ import {
           
             <Card backgroundColor={'transparent'} paddingRight={{base:'0px'}} border='none' variant={'unstyled'} align={{base:'center', md:'start'}} >
             
-              <CardHeader>
+              <CardHeader
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
             
             
               <Image src={Group1} Width={'130px'} height={'100%'}/></CardHeader>
@@ -84,6 +99,8 @@ import {
               >Sign Up</Text> 
               
               <Text
+                data-aos="fade-up"
+                data-aos-duration="3000"
                 fontFamily={'Satoshi'}
                 textAlign={{base:'center', md:'start'}}
                 fontSize={{base:'16px', md:'20px'}}
@@ -96,7 +113,11 @@ import {
             </Card>   
             <Image src={GroupVector} paddingTop={'42px'} Width={'130px'} height={'100%'} display={{base:'none', md:'flex'}}/>
             <Card backgroundColor={'transparent'} paddingLeft={{base:'0px',md:'72px'}}  paddingRight={{base:'0px',md:'0px'}} border='none' variant={'unstyled'} align={{base:'center', md:'start'}} >
-            <CardHeader> 
+            <CardHeader
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
+            
               
               <Image src={Group2} Width={'130px'} height={'100%'} />  
               </CardHeader>
@@ -111,6 +132,8 @@ import {
                   lineHeight={'31px'}
                 >Gain Access</Text>
                 <Text
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
                   fontFamily={'Satoshi'}
                   textAlign={{base:'center', md:'start'}}
                   fontSize={{base:'16px', md:'20px'}}
@@ -122,7 +145,11 @@ import {
             </Card>
             <Image src={GroupVector2} paddingTop={'42px'} Width={'130px'} height={'100%'} display={{base:'none', md:'flex'}}/>
             <Card backgroundColor={'transparent'}  paddingLeft={{base:'opx',md:'63px'}} border='none' variant={'unstyled'} align={{base:'center', md:'start'}} >
-            <CardHeader> <Image src={Group3}  Width={'130px'} height={'100%'} /></CardHeader>
+            <CardHeader 
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
+             <Image src={Group3}  Width={'130px'} height={'100%'} /></CardHeader>
           
                 <Text
                   fontFamily='Epilogue'
@@ -134,6 +161,8 @@ import {
                   lineHeight={'31px'}       
                 >Fast-track</Text>
                 <Text
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
                   fontFamily={'Satoshi'}
                   textAlign={{base:'center', md:'start'}}
                   fontSize={{base:'16px', md:'20px'}}

@@ -1,8 +1,19 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { Box, Image,Text,Button,Container } from '@chakra-ui/react'
 import join from './images/Image.png'
 import join2 from './images/mobileTestimonial.svg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const JoinOurCommunity = () => {
+  useEffect(()=> {
+    AOS.init({
+      duration:2000,
+      once:true
+    
+    });
+  }, [])
+
   return (
     // <Container maxW={'container'}>
   <Box
@@ -28,7 +39,10 @@ const JoinOurCommunity = () => {
           
         <Text
           
-          // margin={'0 auto'}
+          data-aos="fade-left"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+
           textAlign={{md:'left'}}
           width={{ base: '380.86px', md: '600px'}}
           fontFamily='Epilogue'
@@ -70,6 +84,10 @@ const JoinOurCommunity = () => {
         // marginRight={'115.19px'}
       >
         <Image
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+
             marginTop={'29px'}
             objectFit='contain'
             width={{ base: '432.43px' }}
@@ -87,7 +105,10 @@ const JoinOurCommunity = () => {
       >
     
         <Image
-       
+           data-aos="zoom-out"
+           data-aos-easing="ease-out-cubic"
+           data-aos-duration="2000"
+
             objectFit='contain'
             width={{ md: '100%' }}
             height={{ base: '421px', md: '577.4px' }}

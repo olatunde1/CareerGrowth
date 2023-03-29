@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box,Image,Stack,Text,Heading,useBreakpointValue } from "@chakra-ui/react";
+import { Box,Image,Stack,Text,Heading,useBreakpointValue, Container } from "@chakra-ui/react";
 import image2 from './images/shayla.jpg'
 import testImage from './images/testimonial.jpg'
 import adebiyi from './images/adebiyi.png'
@@ -50,10 +50,13 @@ function Testimonials() {
   const [testimonialBody, setTestimonialBody] = useState(testimonialsArray[0]);
 
   return (
-   <Box align='center'>
-       <Box  maxWidth={'100%'}  paddingBottom={{md:'30px', lg:'129px'}} >
-      
+   <Box align='center' backgroundColor={{base:'#EBEBF4', md:'#ffffff'}}>
+   
+       <Box paddingBottom={{md:'30px', lg:'129px'}} >
+
+       <Container maxW='container.xl'>
       {/* active testimonial */}
+
       <Box>
           <Text
             width={{base:'355.74px', md:'1120px'}}
@@ -101,11 +104,13 @@ function Testimonials() {
 
     {/*This is the testimonial for mobile section  */}
       <Box
-        width={{base:'405px', md:'1120px'}}
-        height={{base:'753px', md:'500px'}}
+       
+        width={{base:'490px', md:'1120px'}}
+        height={{base:'783px', md:'500px'}}
         display={{base: 'column',md:'flex'}}
         backgroundColor={'#EBEBF4'}
-        borderRadius={'16px'}
+        borderRadius={{base:'null', md:'16px'}}
+      
         
         // marginTop={{base:'0px',md:'px'}}
         // borderRadius={'20px'}  
@@ -125,11 +130,11 @@ function Testimonials() {
           <Heading
             display={{base:'block', md:'none'}}
             fontSize={{ base: '28px', md: '48px', lg: '48px' }}
-            width={{base:'355.74px', md:'606.07px'}}
+            // width={{base:'355.74px', md:'606.07px'}}
             height={{md:'120px'}}
             textAlign={{base:'center', md:'left'}}
             lineHeight={{base:'29px', md:'60px'}}
-            marginLeft={{base:'27.13px', md:'0'}}
+            // marginLeft={{base:'27.13px', md:'0'}}
             marginBottom={'24px'}
           >
             <Text
@@ -158,12 +163,11 @@ function Testimonials() {
           src={ testimonialBody.image}
           fit={'cover'}
           height={{base:'253.9px', md:'500px'}}
-          width={{base:'70%', md:'100%'}}
+          width={{base:'244.95px', md:'100%'}}
           marginLeft={{base:'null', md:'85px'}}
           // paddingTop={{base:'24px', md:''}}
           borderRadius={'16px'}
           display={{base:'block', md:'none'}}
-
           />
            <Text
             align={'justify'}
@@ -185,32 +189,33 @@ function Testimonials() {
 
           {/* large screen testimonial div/Box */}
 
-        <Box>
-          
-          <Text
-            align={'left'}
-            className="textBody"
-            width={{base:'341.6px', md:'580.29px'}}
-            display={{base:'none', md:'block'}}
-            height={{base:'220px', md:'248px'}}
-            fontSize={{base:'16px', md:'22px'}}
-            fontFamily={'Satoshi'}
-            fontStyle={'normal'}
-            lineHeight={{base:'22px', md:'140%'}}
-            color={'#001F42'}
-            paddingTop={'156px'}
-            paddingBottom={'95.18px'}
-            paddingLeft={'60px'}
-            animation={'ease-in'}
+          <Box display='flex' >
+          <Box>
+            
+            <Text
+              align={'left'}
+              className="textBody"
+              width={{base:'341.6px', md:'580.29px'}}
+              display={{base:'none', md:'block'}}
+              height={{base:'220px', md:'248px'}}
+              fontSize={{base:'16px', md:'22px'}}
+              fontFamily={'Satoshi'}
+              fontStyle={'normal'}
+              lineHeight={{base:'22px', md:'140%'}}
+              color={'#001F42'}
+              paddingTop={'156px'}
+              paddingBottom={'95.18px'}
+              paddingLeft={'60px'}
+              animation={'ease-in'}
 
-          >{testimonialBody.description}</Text>
-         </Box>
+            >{testimonialBody.description}</Text>
+          </Box>
         
           <Image 
-            className={'passPort'}
+          className={'passPort'}
           src={ testimonialBody.image}
-          height={'500px'} width={'454px'}
-          marginLeft={{base:'', md:'85px'}}
+          height={'500px'} width={{md:'454px'}}
+          marginLeft={{base:'null', md:'85px'}}
           fit={'cover'}
           display={{base:'none', md:'block'}}
           borderBottomRightRadius={'16px'}
@@ -218,60 +223,70 @@ function Testimonials() {
           // color={'gray'}
           // opacity={'0.8'}
           />
+          </Box>
+          
         
-        </Box>
+      </Box>
 
 
       {/* testimonial small card list */}
-    
-    <Box
+      </Container>
       
-      align='start'
-      display={{base:'flex', md:'flex'}} 
-      className="flex"
-      marginTop={'60px'}
-      paddingLeft={{base:'2px',md:'11px'}}
-      width={{base:'479px', md:'1100px'}}
-      overflow={{base:'hidden', md:'visible'}}
      
-      >
-      {testimonialsArray.map((item, idx) => (
-        <div
-          className={` ${item.id===testimonialBody.id?'active':'inActive'} smallCard`}
-          key={idx}
-          onClick={() => {
-            // console.log(item)
-            setTestimonialBody(item);
-          }}
+      <Box
+        backgroundColor={{base:'#EEF6FF;', md:'#ffffff'}}
+        align='start'
+        display={{base:'flex', md:'flex'}} 
+        className="flex"
+        marginTop={{base:'10px', md:'60px'}}
+        paddingTop={{base:'16px'}}
+        paddingLeft={{base:'2px',md:'11px'}}
+        width={{base:'479px', md:'1100px'}}
+        overflowX={{base:'auto', md:'visible'}}
+      
         >
-          <Image 
-          src={item.passport}
-          marginRight={{base:'0px',md:'20px'}}
-          width={'60px'} height={'70px'}
-          paddingBottom={'21px'}   />
-          <Box width={{base:'250px', md:'250px'}} overflow={'hidden'} paddingLeft={{base:'12px', md:'0px'}}  >
-            <Text
-              paddingTop={'6px'}
-              className="userName"
-              fontFamily={'Epilogue'}
-              fontWeight={'500'}
-              color={'#001630'}
-              fontSize={{base:'14px', md:'18px'}} 
-              lineHeight={'140%'}
-            >{item.name}</Text>
-            <Text
-              fontFamily={'Satoshi'}
-              fontWeight={'500'}
-              fontSize={{base:'12px', md:'14px'}} 
-              lineHeight={'140%'}
-            >{item.jobDesc}</Text>
-          </Box>
-         
-        </div>
-      ))}
+        {testimonialsArray.map((item, idx) => (
+          <div
+            className={` ${item.id===testimonialBody.id?'active':'inActive'} smallCard`}
+            key={idx}
+            onClick={() => {
+              // console.log(item)
+              setTestimonialBody(item);
+            }}
+          >
+            <Image 
+            src={item.passport}
+            marginRight={{base:'0px',md:'20px'}}
+            width={'50px'} height={'70px'}
+            paddingBottom={'21px'}   />
+            <Box width={{base:'250px', md:'250px'}} overflow={'hidden'} paddingLeft={{base:'12px', md:'0px'}}  >
+              <Text
+                paddingTop={'6px'}
+                className="userName"
+                fontFamily={'Epilogue'}
+                fontWeight={'500'}
+                color={'#001630'}
+                fontSize={{base:'14px', md:'18px'}} 
+                lineHeight={'140%'}
+              >{item.name}</Text>
+              <Text
+                fontFamily={'Satoshi'}
+                fontWeight={'500'}
+                fontSize={{base:'12px', md:'14px'}} 
+                lineHeight={'140%'}
+              >{item.jobDesc}</Text>
+            </Box>
+          
+          </div>
+        ))}
+      </Box>
+       </Box>
+
+   
     </Box>
-  </Box>
-   </Box>
+    
+   
+    
     
   );
 }

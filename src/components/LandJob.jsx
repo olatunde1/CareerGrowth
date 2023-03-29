@@ -3,31 +3,21 @@ import {
     Stack,
     Text,
     Button,
+    Container,
     Box,
     Image
   } from '@chakra-ui/react';
   import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
   import {faArrowUpRightDots} from '@fortawesome/free-solid-svg-icons'
-  import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
   import 'animate.css';
-  
 
-
-  const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
-  const FadeUp = batch(Fade(), Move(), Sticky())
 
   export default function CallToActionWithIllustration() {
    ;
     return (
-      <ScrollContainer>
-        <ScrollPage>
-        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
-        <Box
-        maxWidth={'1440px'}
-        margin={'0 auto'}
-        // textAlign={'center'}
-      >
-        <Stack
+        <Box>
+           <Container maxW='container.xl'>
+           <Stack
           // width={'100vw'}
           textAlign={'center'}
           align={{sm:'center', base:'center', md:'center'}}
@@ -37,7 +27,7 @@ import {
           
             <Heading
             className='animate__animated animate__bounceIn'
-              width={{base:'360.56px',sm:'360.56px', md:'1074px'}}
+              width={{base:'360.56px', md:'1074px'}}
               fontWeight={{base:'500', md:'700'}}
               fontFamily='Epilogue'
               fontSize={{ base: '38px', md: '84px' }}
@@ -53,8 +43,7 @@ import {
           
         
           <Text
-          paddingLeft={'16.54px'}
-          paddingRight={'16.54px'}
+          
           paddingBottom={{base:'72px', md:'48px'}}
           width= {{base:'345.49px', md:'693px'}}
           height={'56px'}
@@ -95,10 +84,9 @@ import {
             </Button>
           </Stack>
         </Stack>
+           </Container>
+       
       </Box>
-        </Animator>
-        </ScrollPage>
-      </ScrollContainer>
       
     );
   }

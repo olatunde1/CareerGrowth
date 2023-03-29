@@ -29,16 +29,16 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
- 
-      <Box>
+    <Box>
+        <Container maxW='container.xl'>
         <Flex
           color={useColorModeValue('gray.600', 'white')}
           py={{ base: 8, md: 8 }}
           px={{ base: 1 }}
-          marginRight={{base:'0px', md:'58px', lg:'158px'}}
+          marginRight={{base:'0px'}}
         >          
-          <Stack flex={{ base: 'center',md:'1' }} justify={{ base: 'center',md:'center', lg: 'start' }}>
-          <Box marginLeft={{base:'50px',sm:'54px', md:'58px', lg:'158px'}}>
+          <Stack flex={{ base: 'center',md:'1' }} margin={{base:'0 auto'}}>
+            <Box>
               <Image src={logo} />
             </Box>
           </Stack>
@@ -47,16 +47,15 @@ export default function WithSubnavigation() {
           direction={'row'}
           >
               <Button
-              
-              className='btn'
-                  fontFamily='Inter'
-                  display={{base:'none', md:'flex'}}
-                  px={ '32px'}
-                  fontSize={'14px'}
-                  fontWeight={'600'}
-                  border={'1px solid #E6E6E6 '}
-                  bg={'#ffffff'}
-                  _hover={{ bg: '#0077FE', color: '#ffff' }}>
+                className='btn'
+                fontFamily='Inter'
+                display={{base:'none', md:'flex'}}
+                px={ '32px'}
+                fontSize={'14px'}
+                fontWeight={'600'}
+                border={'1px solid #E6E6E6 '}
+                bg={'#ffffff'}
+                _hover={{ bg: '#0077FE', color: '#ffff' }}>
                 Contact Us
               </Button>
               <Button 
@@ -75,7 +74,8 @@ export default function WithSubnavigation() {
               </Button>
             </Stack>
         </Flex>
-      </Box>
+        </Container>
+    </Box>
   
   
   

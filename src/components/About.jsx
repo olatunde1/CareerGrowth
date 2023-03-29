@@ -5,6 +5,7 @@ import {
     Image,
     Stack,
     Text,
+    Container,
     useBreakpointValue,
     Grid, GridItem
   } from '@chakra-ui/react';
@@ -21,20 +22,19 @@ import {
 
     return (
      
-      <Box maxWidth={'100%'}>
-        <Stack paddingBottom={{base:'44px', md:'98px'}} width={{base:'405px', md:'1440px'}}  direction={{ base: 'column', md: 'row' }} paddingLeft={{base:'5px',lg:'159.21px'}} paddingRight={{base:'null', lg:'19.21px'}}>
+      <Box>
+        <Container maxW='container.xl'>
+          <Stack paddingBottom={{base:'44px', md:'98px'}} width={{base:'405px', md:'1440px'}}  direction={{ base: 'column', md: 'row' }} paddingLeft={{base:'5px',lg:'100.21px'}}  paddingRight={{base:'5px',lg:'100.21px'}}>
         <Flex flex={1}>
           
           <Image
           className='animate__animated animate__bounceIn'
             alt={'Join Image'}
             objectFit={'contain'}
-            width={'100%'}
+            width='100%'
             height={'440px'}
             src={join}
           />
-        
-        
         </Flex>
         <Flex paddingLeft={{lg:'96px'}} flex={1} width={'480px'} textAlign={'justify'} >
           <Stack spacing={6} w={'full'} maxW={'lg'}>
@@ -146,6 +146,8 @@ import {
         </Flex>
       
         </Stack>
+          </Container>
+        
       </Box>
   
     );

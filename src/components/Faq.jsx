@@ -3,13 +3,17 @@ import { Box,Text, Accordion,
     AccordionButton,
     AccordionPanel,
     AccordionIcon,
+    Container,
     Heading,
     } from '@chakra-ui/react'
 import React from 'react'
 
 const Faq = () => {
   return (
-    <Box  display={'flex'} flexDirection={{ base: 'column', md:'row' }} marginLeft={{base:'null', md:'130px'}}>
+    <>
+    <Container maxW='container.xl' backgroundColor={{base:'#EEF6FF;', md:'#ffffff'}}>
+    <Box  display={'flex'} flexDirection={{ base: 'column', md:'row' }} marginLeft={{base:'null', md:'60px'}} >
+
             <Box marginRight={'42px'} >
                 <Text 
                      display={{base:'none', md:'block'}}
@@ -20,7 +24,7 @@ const Faq = () => {
                      fontFamily='Epilogue'
                 >FAQ’S</Text>
                 <Heading
-                    // width={{md:'190px', lg:'620px'}}
+                    width={{base:'310px'}}
                     display={{base:'block', md:'none'}}
                     paddingTop={{ base: '44px', md: '0px' }}
                     fontSize={{ base: '24px', md: '48px' }}
@@ -76,8 +80,9 @@ const Faq = () => {
             </Box>
             <Box
                
-                width={{base:'410px', md:'580px'}}
+                width={{base:'440px', md:'580px'}}
                 paddingTop={{base:'15.5px', md:'130px'}}
+                paddingBottom={{md:'116px'}}
             >
             <Accordion allowToggle>
                 <AccordionItem
@@ -221,9 +226,12 @@ const Faq = () => {
             </Accordion>
             
             </Box>
+            </Box> 
+    </Container>
+          
             <Box
                 
-                marginTop={'44px'}
+               
                 textAlign={'center'}
                 display={{ base: 'block', md:'none' }}
                 backgroundColor={'#001F42'} color={'#ffffff'}>
@@ -246,8 +254,8 @@ const Faq = () => {
                      paddingBottom={'14px'}
                 > <a href="hi@careergrowth.com">hi@careergrowth.com</a></Text>
             </Box>
-    </Box> 
-  
+    </>
+    
   )
 }
 

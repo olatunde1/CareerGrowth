@@ -10,7 +10,6 @@ import LandJob from './components/LandJob'
 import About from './components/About'
 import Member from './components/Member'
 import Testimonial from './components/Testimonial.jsx'
-// import Testimonial2 from './components/Testimonial2.jsx'
 import JoinOurCommunity from './components/JoinOurCommunity'
 import Faq from './components/Faq';
 import theme from './components/theme'
@@ -37,7 +36,6 @@ function App() {
               <About />
               <Member />
               <Testimonial />
-              {/* <Testimonial2 /> */}
               <JoinOurCommunity />
               <Faq />
         

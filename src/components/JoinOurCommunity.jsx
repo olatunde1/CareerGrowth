@@ -1,6 +1,6 @@
 import React, {useEffect} from "react"
-import { Box, Image,Text,Button,Container } from '@chakra-ui/react'
-import join from './images/Image.png'
+import { Box, Image,Text,Button,Container,Stack } from '@chakra-ui/react'
+import join from './images/newJoin.svg'
 import join2 from './images/mobileTestimonial.svg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -16,24 +16,173 @@ const JoinOurCommunity = () => {
 
   return (
     // <Container maxW={'container'}>
-  <Box
-    className="join"
-    align='center'
-    // width={{base:'', md:'100%'}}
-    height={{base:'', md:'509px'}}
-    display={'flex'}
+   <Box
+
+   className="JoinOurCommunity"
+   height={{base:'', md:'470px'}}
+    maxWidth='100%'
+    // display={'flex'}
     backgroundColor={'#001630'}
     color={'#ffffff'}
-    flexDirection={{ base: 'column', md:'row' }}
-    overflow='hidden'
-    variant='outline' >
+    // flexDirection={{ base: 'column', md:'row' }}
+    
+   
+    // overflowY='visible'
+    // overflowX='hidden'
+    // zIndex='-1'
+    // variant='outline'
+     >
 
     <Container maxW='container.xl'>
-      <Box display={{base:'column',md:'flex'}}>
+      <Stack display={{base:'none', md:'block'}}>
+        <Box 
+        display={{base:'column',md:'row'}}
+        height={{base:'', md:'470px'}}
+        position='relative'
+        width={{base:'', md:'1200px'}} 
+        // backgroundColor='yellow.400'
+      
+        
+        >
+        <Box
+          width={{ base: '360.86px', md: '740px'}}
+          fontSize={{ base: '3xl', md: '48px', lg: '48px' }}
+          lineHeight={'60px'}
+          paddingLeft='30px'
+         
+          
+        >
+
+            
+          <Text
+            
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+
+            
+            textAlign={{md:'left'}}
+            width={{ base: '380.86px', md: '600px'}}
+            fontFamily='Epilogue'
+            fontStyle={'normal'}
+            fontWeight={'600'}
+            fontSize={{ base: '24px', md: '44px'}}
+            lineHeight={'60px'}
+            letterSpacing={'-0.98px'}
+            paddingTop={{base:'45px', md:'131.5px'}}>
+            Join our community today to<Text color={'#0077FE'} as={'span'}>
+                  {' '} fast-track</Text>{' '}your<Text color={'#0077FE'} as={'span'}  > tech  career
+          </Text>
+          </Text>
+          
+            {/* Desktop text button */}
+            <Button
+              display={{base:'none', md:'block'}}
+              width={'256px'}
+              marginTop={'18px'}
+              fontFamily='Epilogue'
+              variant='solid'
+              colorScheme='blue'
+              color={'#ffffff'}
+              px={'92px'}
+              backgroundColor={'#01E7FF'}
+              _hover={{ bg: '#01E7FF', color: '#ffff' }}>
+              Join Now
+            </Button>
+
+            {/* mobile text button */}
+            <Button
+              display={{base:'block', md:'none'}}
+              width={'256px'}
+              marginTop={'18px'}
+              fontFamily='Epilogue'
+              variant='solid'
+              colorScheme='blue'
+              color={'#ffffff'}
+              px={'92px'}
+              backgroundColor={'#01E7FF'}
+              _hover={{ bg: '#01E7FF', color: '#ffff' }}>
+              Join Now
+            </Button>
+          
+          
+
+        </Box>
+
+
+        {/* Mobile view for Join Our community section */}
+        <Box 
+          borderRadius={'24px'}
+          display={{base:'block', md:'none'}}
+         
+        >
+          <Image
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+
+              marginTop={'29px'}
+              objectFit='contain'
+              width={{ base: '432.43px' }}
+              height={{ base: '421px', md: '577.4px' }}
+              src={join2}
+              alt='Caffe Latte'
+            />
+        </Box>
+
+        {/* Image Desktop view for Join Our community section  */}
+          <Box 
+            className="big"
+            borderRadius={'24px'}
+            display={{base:'none', md:'block'}}
+            // marginLeft={'100.19px'}
+            // marginLeft='300px'
+            // overflowX='hidden'
+            // marginRight={'1105.19px'}
+          >
+        
+            <Image
+
+              data-aos="zoom-out"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+              
+
+              zIndex='1'
+            
+              top='-90px'
+              left='390px'
+              position='absolute'
+              objectFit='contain'
+              width={{ md: '100%', base:'null' }}
+              height={{ base: '421px', md: '677.4px' }}
+              src={join}
+              alt='Caffe Latte'
+              />
+          </Box>
+        </Box>
+      </Stack>
+
+
+
+
+
+
+      <Stack align='center' display={{base:'block', md:'none'}}>
+      <Box 
+      align='center'
+      display={{base:'column',md:'row'}}
+      height={{base:'', md:'65.8vh'}}
+      position='relative'
+      // width={{base:'', md:'100%'}} 
+     
+      
+      >
       <Box
         width={{ base: '360.86px', md: '740px'}}
         fontSize={{ base: '3xl', md: '48px', lg: '48px' }}
         lineHeight={'60px'}
+        
       >
 
           
@@ -43,6 +192,7 @@ const JoinOurCommunity = () => {
           data-aos-easing="linear"
           data-aos-duration="1500"
 
+          
           textAlign={{md:'left'}}
           width={{ base: '380.86px', md: '600px'}}
           fontFamily='Epilogue'
@@ -57,22 +207,37 @@ const JoinOurCommunity = () => {
         </Text>
         </Text>
         
-          <Box align='left'>
+          {/* Desktop text button */}
           <Button
-            
+             display={{base:'none', md:'block'}}
             width={'256px'}
             marginTop={'18px'}
             fontFamily='Epilogue'
             variant='solid'
             colorScheme='blue'
-            marginLeft={{ base: '50px', md:'64px'}}
             color={'#ffffff'}
             px={'92px'}
             backgroundColor={'#01E7FF'}
             _hover={{ bg: '#01E7FF', color: '#ffff' }}>
             Join Now
           </Button>
-          </Box>
+
+          {/* mobile text button */}
+          <Button
+            display={{base:'block', md:'none'}}
+            width={'256px'}
+            marginTop={'18px'}
+            fontFamily='Epilogue'
+            variant='solid'
+            colorScheme='blue'
+            color={'#ffffff'}
+            px={'92px'}
+            backgroundColor={'#01E7FF'}
+            _hover={{ bg: '#01E7FF', color: '#ffff' }}>
+            Join Now
+          </Button>
+        
+        
 
       </Box>
 
@@ -98,27 +263,39 @@ const JoinOurCommunity = () => {
       </Box>
 
       {/* Image Desktop view for Join Our community section  */}
-      <Box 
-         borderRadius={'24px'}
-        display={{base:'none', md:'block'}}
-        // marginRight={'115.19px'}
-      >
-    
-        <Image
-           data-aos="zoom-out"
-           data-aos-easing="ease-out-cubic"
-           data-aos-duration="2000"
+        <Box 
+        className="big"
+          borderRadius={'24px'}
+          display={{base:'none', md:'block'}}
+          marginLeft='300px'
+          // overflowX='hidden'
+          // marginRight={'1105.19px'}
+        >
+      
+          <Image
 
+            data-aos="zoom-out"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            
+           
+            top='-90px'
+            // left='290px'
+            position='absolute'
             objectFit='contain'
-            width={{ md: '100%' }}
-            height={{ base: '421px', md: '577.4px' }}
+            width={{ md: '100%', base:'null' }}
+            height={{ base: '421px', md: '677.4px' }}
             src={join}
             alt='Caffe Latte'
-          />
+            />
+        </Box>
       </Box>
-      </Box>
+      </Stack>
+      
     </Container>
 </Box>
+
+
    
   )
 }

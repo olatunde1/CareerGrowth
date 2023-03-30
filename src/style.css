@@ -13,16 +13,13 @@ body{
     --blue: #0077FE;
     min-height: 100vh;
     max-width: 100%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     box-sizing: border-box;
     position: relative;
 }
 html{
     scroll-behavior: smooth;
 }
-
-
-
 
 .flex{
     margin-top: 60px;
@@ -77,3 +74,9 @@ html{
     flex-grow: 0;
  }
  
+
+ .JoinOurCommunity::after{
+    clear: both;
+    display: block;
+ }
+

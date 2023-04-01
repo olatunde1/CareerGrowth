@@ -98,6 +98,7 @@ const Faq = () => {
                         fontWeight={'500'}
                         fontStyle={'normal'}
                         lineHeight={'140%'}
+                        transition='ease-in-out'
                         
                         >
                          What makes your program different from <br /> other career coaching services?

@@ -35,7 +35,7 @@ function App() {
               <LandJob />
               <About />
               <Member />
-              {/* <Testimonial /> */}
+              <Testimonial />
               <JoinOurCommunity />
               <Faq />
         

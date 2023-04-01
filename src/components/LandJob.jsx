@@ -73,7 +73,7 @@ import {
                 colorScheme={'#0077FE'}
                 bg={'#0077FE'}
                 _hover={{ bg: '#0d72e5', color: '#ffff',transition:'1s ease-in-out' }}>
-              Join Now
+              Apply Now 
             </Button>
             <Button 
                 fontFamily='Epilogue'

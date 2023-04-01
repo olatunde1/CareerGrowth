@@ -71,7 +71,7 @@ export default function WithSubnavigation() {
                   color={'#ffffff'}
                   bg={'#0077FE'}
                   _hover={{ bg: '#0d72e5', color: '#ffff' }}>
-                Join Now &nbsp;&nbsp;&nbsp;&nbsp; <FontAwesomeIcon className='icon' icon={faArrowRight} />
+                Apply Now &nbsp;&nbsp;&nbsp;&nbsp; <FontAwesomeIcon className='icon' icon={faArrowRight} />
               </Button>
             </Stack>
         </Flex>

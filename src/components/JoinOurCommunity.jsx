@@ -87,7 +87,7 @@ const JoinOurCommunity = () => {
               px={'92px'}
               backgroundColor={'#01E7FF'}
               _hover={{ bg: '#01E7FF', color: '#ffff' }}>
-              Join Now
+              Apply Now 
             </Button>
 
             {/* mobile text button */}
@@ -146,9 +146,6 @@ const JoinOurCommunity = () => {
               data-aos="zoom-out"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="2000"
-              
-
-              zIndex='1'
             
               top='-90px'
               left='390px'

@@ -72,7 +72,7 @@ import {
                   colorScheme={'#0077FE'}
                   bg={'#0077FE'}
                   _hover={{ bg: '#0d72e5', color: '#ffff' }}>
-                Join Now
+                Apply Now 
               </Button>
             </Stack>
           </Stack>

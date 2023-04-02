@@ -1,5 +1,5 @@
 import React, {useEffect} from "react"
-import { Box, Image,Text,Button,Container,Stack } from '@chakra-ui/react'
+import { Box, Image,Text,Button,Container,Stack,Link } from '@chakra-ui/react'
 import join from './images/newJoin.svg'
 import join2 from './images/mobileTestimonial.svg'
 import AOS from 'aos';
@@ -76,6 +76,7 @@ const JoinOurCommunity = () => {
           </Text>
           
             {/* Desktop text button */}
+            <Link href='https://api.whatsapp.com/send?phone=+2348035331782&text=I will like to request for your service' style={{textDecoration:'none'}}>
             <Button
               display={{base:'none', md:'block'}}
               width={'256px'}
@@ -89,8 +90,10 @@ const JoinOurCommunity = () => {
               _hover={{ bg: '#01E7FF', color: '#ffff' }}>
               Apply Now 
             </Button>
+            </Link>
 
             {/* mobile text button */}
+            <Link href='https://api.whatsapp.com/send?phone=+2348035331782&text=I will like to request for your service' style={{textDecoration:'none'}}>
             <Button
               display={{base:'block', md:'none'}}
               width={'256px'}
@@ -104,6 +107,7 @@ const JoinOurCommunity = () => {
               _hover={{ bg: '#01E7FF', color: '#ffff' }}>
               Join Now
             </Button>
+            </Link>
           
           
 
@@ -205,6 +209,7 @@ const JoinOurCommunity = () => {
         </Text>
         
           {/* Desktop text button */}
+          <Link href='https://api.whatsapp.com/send?phone=+2348035331782&text=I will like to request for your service' style={{textDecoration:'none'}}>
           <Button
              display={{base:'none', md:'block'}}
             width={'256px'}
@@ -218,8 +223,10 @@ const JoinOurCommunity = () => {
             _hover={{ bg: '#01E7FF', color: '#ffff' }}>
             Join Now
           </Button>
+          </Link>
 
           {/* mobile text button */}
+          <Link href='https://api.whatsapp.com/send?phone=+2348035331782&text=I will like to request for your service' style={{textDecoration:'none'}}>
           <Button
             display={{base:'block', md:'none'}}
             width={'256px'}
@@ -233,6 +240,7 @@ const JoinOurCommunity = () => {
             _hover={{ bg: '#01E7FF', color: '#ffff' }}>
             Join Now
           </Button>
+          </Link>
         
         
 

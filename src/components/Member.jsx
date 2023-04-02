@@ -3,6 +3,7 @@ import {
     Container,
     Heading,
     Stack,
+    Link,
     Text,
     Box,
     Image,
@@ -64,6 +65,7 @@ import {
             Simple steps to benefit for our large community
             </Text>
             <Stack spacing={6} direction={'row'}>
+            <Link href='https://api.whatsapp.com/send?phone=+2348035331782&text=I will like to request for your service' style={{textDecoration:'none'}}>
               <Button
                   fontFamily='Epilogue'
                   px={{base:'74px', md:'88px'}}
@@ -74,6 +76,7 @@ import {
                   _hover={{ bg: '#0d72e5', color: '#ffff' }}>
                 Apply Now 
               </Button>
+              </Link>
             </Stack>
           </Stack>
           <Stack direction={{ base: 'column', sm:'column', md:'row' }} width={{base:'375px', md:'1400px'}} margin={'0 auto'} paddingLeft={{base:'0px', md:'60px'}} >

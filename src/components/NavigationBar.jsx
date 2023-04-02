@@ -8,7 +8,7 @@ import {
   useColorModeValue,
   useDisclosure,
   useColorMode,
-
+  Link,
 } from '@chakra-ui/react';
 // import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
   
@@ -47,6 +47,8 @@ export default function WithSubnavigation() {
           <Stack spacing={6}
           direction={'row'}
           >
+            
+            <Link href='https://api.whatsapp.com/send?phone=+2348035331782&text=I will like to request for your service' style={{textDecoration:'none'}}>
               <Button
                 className='btn'
                 fontFamily='Inter'
@@ -57,8 +59,14 @@ export default function WithSubnavigation() {
                 border={'1px solid #E6E6E6 '}
                 bg={'#ffffff'}
                 _hover={{ bg: '#0077FE', color: '#ffff' }}>
-                Contact Us
+                  
+                  Contact Us
+                 
+                
               </Button>
+              </Link>
+
+              <Link href='https://api.whatsapp.com/send?phone=+2348035331782&text=I will like to request for your service' style={{textDecoration:'none'}}>
               <Button 
                 //  px={'88px'}
                
@@ -73,6 +81,7 @@ export default function WithSubnavigation() {
                   _hover={{ bg: '#0d72e5', color: '#ffff' }}>
                 Apply Now &nbsp;&nbsp;&nbsp;&nbsp; <FontAwesomeIcon className='icon' icon={faArrowRight} />
               </Button>
+              </Link>
             </Stack>
         </Flex>
         

@@ -115,11 +115,11 @@ const Faq = () => {
                         textAlign={'justify'}
                         
                     >
-                    Our program is specifically designed for bootcamp graduates
-                    looking to advance their tech careers. We provide practical
-                    skills training, mentorship, career guidance, and a 
-                    supportive community to help our participants land their 
-                    dream job in tech and increase their income.
+                    Career growth is typical of its name, being a career accelerator community, 
+                    our model is to help you garner as much work experiences to help you advance 
+                    in your chosen career while other coaching services basically train you and that's all to it.
+                    Career growth community creates a platform to advance your career within the Tech space.
+
                     </AccordionPanel>
                 </AccordionItem>
                 <AccordionItem
@@ -150,10 +150,7 @@ const Faq = () => {
                         width={'640px'}
                         textAlign={'justify'}
                     >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.
+                    A minimum of 60hr every month
                     </AccordionPanel>
                 </AccordionItem>
                 <AccordionItem
@@ -184,10 +181,8 @@ const Faq = () => {
                         width={'640px'}
                         textAlign={'justify'}
                     >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.
+                    You can join although we require that applicants should have some 
+                    background knowledge already in their chosen skill set or career path.
                     </AccordionPanel>
                 </AccordionItem>
                 <AccordionItem
@@ -218,10 +213,7 @@ const Faq = () => {
                         width={'640px'}
                         textAlign={'justify'}
                     >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.
+                    Yes you can cancel your subscription at anytime.
                     </AccordionPanel>
                 </AccordionItem>
             </Accordion>

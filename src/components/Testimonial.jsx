@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box,Image,Stack,Text,Heading,useBreakpointValue, Container } from "@chakra-ui/react";
+import { Box,Image,Text,Heading,useBreakpointValue, Container } from "@chakra-ui/react";
 import image2 from './images/shayla.jpg'
 import testImage from './images/testimonial.jpg'
 import adebiyi from './images/adebiyi.png'

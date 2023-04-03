@@ -8,7 +8,7 @@ import {
     Box,
     Image,
     Button,
-    Card, CardHeader, SimpleGrid
+    Card, CardHeader
   } from '@chakra-ui/react';
   import Group1 from './images/Group1.svg'
   import Group2 from './images/Group2.svg'

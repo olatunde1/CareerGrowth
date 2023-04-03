@@ -6,27 +6,15 @@ import {
   Stack,
   Container,
   useColorModeValue,
-  useDisclosure,
-  useColorMode,
   Link,
 } from '@chakra-ui/react';
-// import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
-  
-import {
-  HamburgerIcon,
-  CloseIcon,
-} from '@chakra-ui/icons';
+
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
-// import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import logo from './images/logo.svg'
 
 
 export default function WithSubnavigation() {
-  
-  const { colorMode, toggleColorMode } = useColorMode();
-
-  const { isOpen, onToggle } = useDisclosure();
 
   return (
     <Container maxW='container.xl'>

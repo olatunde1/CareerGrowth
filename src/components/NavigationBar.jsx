@@ -36,7 +36,7 @@ export default function WithSubnavigation() {
           direction={'row'}
           >
             
-            <Link href='https://api.whatsapp.com/send?phone=+2348035331782&text=I will like to request for your service' style={{textDecoration:'none'}}>
+            <Link href='https://api.whatsapp.com/send?phone=+2348074511396&text=Hello, I will like to make an enquiry' style={{textDecoration:'none'}}>
               <Button
                 className='btn'
                 fontFamily='Inter'
@@ -54,7 +54,7 @@ export default function WithSubnavigation() {
               </Button>
               </Link>
 
-              <Link href='https://api.whatsapp.com/send?phone=+2348035331782&text=I will like to request for your service' style={{textDecoration:'none'}}>
+              <Link href='https://api.whatsapp.com/send?phone=+2348074511396&text=Hello, I will like to make an enquiry' style={{textDecoration:'none'}}>
               <Button 
                 //  px={'88px'}
                

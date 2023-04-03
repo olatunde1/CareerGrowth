@@ -64,7 +64,7 @@ import {
         
           
           <Stack spacing={6} direction={'row'}>
-          <Link href='https://api.whatsapp.com/send?phone=+2348035331782&text=I will like to request for your service' style={{textDecoration:'none'}}>
+          <Link href='https://api.whatsapp.com/send?phone=+2348074511396&text=Hello, I will like to make an enquiry' style={{textDecoration:'none'}}>
             <Button
                 fontFamily='Epilogue'
                 px={{base:'48px', md:'88px'}}
@@ -78,7 +78,7 @@ import {
             </Button>
             </Link>
 
-            <Link href='https://api.whatsapp.com/send?phone=+2348035331782&text=I will like to request for your service' style={{textDecoration:'none'}}>
+            <Link href='https://api.whatsapp.com/send?phone=+2348074511396&text=Hello, I will like to make an enquiry' style={{textDecoration:'none'}}>
             <Button 
                 fontFamily='Epilogue'
                 fontSize={'16px'}

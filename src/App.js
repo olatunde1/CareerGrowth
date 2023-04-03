@@ -25,7 +25,6 @@ function App() {
     <ChakraProvider theme={theme}>
       <Box maxWidth={'100vw'}>
         <Grid>
-          {/* <ColorModeSwitcher justifySelf="flex-end" /> */}
           <motion.div
             className="progress-bar"
             style={{ scaleX: scrollYProgress }}
@@ -40,8 +39,6 @@ function App() {
               <Faq />
         
       </Box>
-        
-  
     </ChakraProvider>
   );
 }

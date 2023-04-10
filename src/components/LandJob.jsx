@@ -38,9 +38,9 @@ import {
               letterSpacing={{base:'0.01em', md:'0px'}}
               >
               
-            Land your dream job in Tech &
+            Land your dream job in&nbsp;
               <Text  as={'span'} color={'#0077FE'}>
-              10x your income.
+                Tech.
               </Text>
             </Heading>
           
@@ -59,7 +59,7 @@ import {
           textAlign={'center'}
           letterSpacing={'-0.18px'}
           color={'#001F42'}>
-          Get the skills and support you need to land your dream job in tech and multiply your income with our Career Accelerator.
+          Our career accelerator prepares you with job requirements that recruiters look for.
           </Text>
         
           

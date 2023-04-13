@@ -23,7 +23,7 @@ function App() {
   const { scrollYProgress } = useScroll();
   return (
     <ChakraProvider theme={theme}>
-      <Box maxWidth={'100vw'}>
+      <Box>
         <Grid>
           <motion.div
             className="progress-bar"

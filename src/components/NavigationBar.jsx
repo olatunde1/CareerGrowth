@@ -17,9 +17,9 @@ import logo from './images/logo.svg'
 export default function WithSubnavigation() {
 
   return (
-    <Container maxW='container.xl'>
+   
     <Box>
-        
+         <Container maxW='container.xl'>
         <Flex
           color={useColorModeValue('gray.600', 'white')}
           py={{ base: 8, md: 8 }}
@@ -72,10 +72,9 @@ export default function WithSubnavigation() {
               </Link>
             </Stack>
         </Flex>
-        
-    </Box>
   
     </Container>
+    </Box>
   
     
   );

@@ -20,7 +20,7 @@ const JoinOurCommunity = () => {
 
    className="JoinOurCommunity"
    height={{base:'', md:'470px'}}
-    maxWidth='100%'
+    // maxWidth='100%'
     // display={'flex'}
     backgroundColor={'#001630'}
     color={'#ffffff'}
@@ -56,9 +56,9 @@ const JoinOurCommunity = () => {
             
           <Text
             
-            data-aos="fade-left"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
+            // data-aos="fade-left"
+            // data-aos-easing="linear"
+            // data-aos-duration="1500"
 
             
             textAlign={{md:'left'}}
@@ -121,9 +121,9 @@ const JoinOurCommunity = () => {
          
         >
           <Image
-              data-aos="fade-right"
-              data-aos-easing="linear"
-              data-aos-duration="1500"
+              // data-aos="fade-down"
+              // data-aos-easing="linear"
+              // data-aos-duration="1500"
 
               marginTop={'29px'}
               objectFit='contain'
@@ -147,9 +147,9 @@ const JoinOurCommunity = () => {
         
             <Image
 
-              data-aos="zoom-out"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="2000"
+              // data-aos="zoom-out"
+              // data-aos-easing="ease-out-cubic"
+              // data-aos-duration="2000"
             
               top='-90px'
               left='390px'
@@ -189,9 +189,9 @@ const JoinOurCommunity = () => {
           
         <Text
           
-          data-aos="fade-left"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
+          // data-aos="fade-left"
+          // data-aos-easing="linear"
+          // data-aos-duration="1500"
 
           
           textAlign={{md:'left'}}
@@ -254,9 +254,9 @@ const JoinOurCommunity = () => {
         // marginRight={'115.19px'}
       >
         <Image
-            data-aos="fade-right"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
+            // data-aos="fade-right"
+            // data-aos-easing="linear"
+            // data-aos-duration="1500"
 
             marginTop={'29px'}
             objectFit='contain'
@@ -279,9 +279,9 @@ const JoinOurCommunity = () => {
       
           <Image
 
-            data-aos="zoom-out"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            // data-aos="zoom-out"
+            // data-aos-easing="ease-out-cubic"
+            // data-aos-duration="2000"
             
            
             top='-90px'

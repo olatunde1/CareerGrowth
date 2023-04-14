@@ -10,7 +10,7 @@ import React from 'react'
 
 const Faq = () => {
   return (
-    <>
+    <Box>
     <Container maxW='container.xl' backgroundColor={{base:'#EEF6FF;', md:'#ffffff'}}>
     <Box  display={'flex'} flexDirection={{ base: 'column', md:'row' }} marginLeft={{base:'null', md:'60px'}} >
 
@@ -116,7 +116,7 @@ const Faq = () => {
                         
                     >
                     Career growth is typical of its name, being a career accelerator community, 
-                    our model is to help you garner as much work experiences to help you advance 
+                    our model is to help you gain as much work experiences to help you advance 
                     in your chosen career while other coaching services basically train you and that's all to it.
                     Career growth community creates a platform to advance your career within the Tech space.
 
@@ -247,7 +247,7 @@ const Faq = () => {
                      paddingBottom={'14px'}
                 > <a href="hi@careergrowth.com">hi@careergrowth.com</a></Text>
             </Box>
-    </>
+    </Box>
     
   )
 }

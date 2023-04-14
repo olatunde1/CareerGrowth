@@ -164,7 +164,7 @@ function Testimonials() {
           {' '}  our members
           </Text>{' '}{' '}
         </Heading>
-      <Image 
+      <Image
         src={ testimonialBody.image}
         fit={'cover'}
         height={{base:'253.9px', md:'500px'}}

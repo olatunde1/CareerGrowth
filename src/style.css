@@ -40,9 +40,9 @@ body{
     }
 }
 
-.textBody{
+/* .textBody{
     animation: move 2s ease-in !important;
-}
+} */
 
 .progress-bar {
     position: fixed;

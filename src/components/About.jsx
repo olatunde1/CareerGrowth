@@ -20,7 +20,7 @@ import {
   import 'aos/dist/aos.css';
 
 
-  export default function SplitScreen() {
+  export default function About() {
     useEffect(()=> {
       AOS.init({
         duration:2000,
@@ -37,19 +37,19 @@ import {
         <Flex flex={1}>
           
           <Image
-             data-aos="zoom-out"
-             
-          // className='animate__animated animate__bounceIn'
+            data-aos="zoom-in-up"   
+            
             alt={'Join Image'}
             objectFit={'contain'}
-            width='100%'
-            height={'440px'}
+            maxWidth='100%'
+            height={'27.5rem'}
             src={join}
+            
           />
         </Flex>
         <Flex paddingLeft={{lg:'96px'}} flex={1} width={'480px'} textAlign={'justify'} >
           <Stack spacing={6} w={'full'} maxW={'lg'}
-            data-aos="zoom-in-left"
+            data-aos="zoom-in"
           >
           
               <Text color={'#01E7FF'}
@@ -158,8 +158,8 @@ import {
           </Stack>
         </Flex>
       
-        </Stack>
-          </Container>
+          </Stack>
+        </Container>
         
       </Box>
   

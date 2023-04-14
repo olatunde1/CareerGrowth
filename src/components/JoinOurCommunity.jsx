@@ -259,7 +259,7 @@ const JoinOurCommunity = () => {
             // data-aos="zoom-out"
             // data-aos-easing="ease-out-cubic"
             // data-aos-duration="2000"
-
+            data-aos="zoom-in-up"
             marginTop={'29px'}
             objectFit='contain'
             width={{ base: '432.43px' }}

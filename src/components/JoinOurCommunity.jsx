@@ -49,8 +49,7 @@ const JoinOurCommunity = () => {
           fontSize={{ base: '3xl', md: '48px', lg: '48px' }}
           lineHeight={'60px'}
           paddingLeft='30px'
-         
-          
+                   
         >
 
             
@@ -108,8 +107,6 @@ const JoinOurCommunity = () => {
               Join Now
             </Button>
             </Link>
-          
-          
 
         </Box>
 
@@ -147,9 +144,9 @@ const JoinOurCommunity = () => {
         
             <Image
 
-              // data-aos="zoom-out"
-              // data-aos-easing="ease-out-cubic"
-              // data-aos-duration="2000"
+              data-aos="zoom-out"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
             
               top='-90px'
               left='390px'
@@ -166,6 +163,11 @@ const JoinOurCommunity = () => {
 
 
 
+
+
+
+     
+      {/******** ****Mobile section code for Join our community today********/}
 
 
 
@@ -254,9 +256,9 @@ const JoinOurCommunity = () => {
         // marginRight={'115.19px'}
       >
         <Image
-            // data-aos="fade-right"
-            // data-aos-easing="linear"
-            // data-aos-duration="1500"
+            // data-aos="zoom-out"
+            // data-aos-easing="ease-out-cubic"
+            // data-aos-duration="2000"
 
             marginTop={'29px'}
             objectFit='contain'
@@ -296,7 +298,6 @@ const JoinOurCommunity = () => {
         </Box>
       </Box>
       </Stack>
-      
     </Container>
 </Box>
 
